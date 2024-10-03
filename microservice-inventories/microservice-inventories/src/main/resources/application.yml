@@ -1,0 +1,25 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: msvc-inventories
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=model
+    username: sa
+    password: Sentry2024*
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: sql_server
+    database-platform: org.hibernate.dialect.SQLServerDialect
+  config:
+    import: optional:configserver:http://localhost:8888
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

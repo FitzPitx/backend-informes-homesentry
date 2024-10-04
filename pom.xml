@@ -17,10 +17,15 @@
     <packaging>pom</packaging> <!-- Indicarle que es un proyecto padre y contenedor -->
 
     <modules>
-        <module>microservice-gateway/microservice-gateway</module>
-        <module>microservice-eureka/microservice-eureka</module>
-        <module>microservice-config/microservice-config</module>
-        <module>microservice-inventories/microservice-inventories</module>
+        <module>microservice-gateway</module>
+        <module>microservice-eureka</module>
+        <module>microservice-config</module>
+        <module>microservice-inventories</module>
+        <module>microservice-categories</module>
+        <module>microservice-subcategories</module>
+        <module>microservice-references</module>
+        <module>microservice-lines</module>
+        <module>microservice-branches</module>
     </modules>
     <properties>
         <maven.compiler.source>23</maven.compiler.source>

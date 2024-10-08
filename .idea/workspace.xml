@@ -4,20 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-branches/microservice-branches/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/microservice-categories/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-inventories/microservice-inventories/src/main/java/com/microservice/inventories/entities/Inventories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/microservice-lines/src/main/java/com/microservice/lines/entities/Lines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/microservice-lines/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-references/microservice-references/src/main/java/com/microservice/references/entities/References.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-references/microservice-references/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/microservice-subcategories/src/main/resources/banner.txt" afterDir="false" />
+    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Creación de paquetes para cada microservicio">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-inventories/microservice-inventories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-inventories/microservice-inventories/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-inventories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-inventories/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-lines/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-lines/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-references/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-references/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FitzPitx&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/FitzPitx/backend-informes-homesentry.git&quot;,
+    &quot;accountId&quot;: &quot;a11a141a-9800-4a0b-b02c-1c4488ee6d0a&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -54,18 +65,24 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MicroserviceCategoriesApplication.executor": "Run",
     "Spring Boot.MicroserviceEurekaApplication.executor": "Run",
     "Spring Boot.MicroserviceInventoriesApplication.executor": "Run",
+    "Spring Boot.MicroserviceSubcategoriesApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/practica.tecnologia/Desktop/Programa Prueba INFORME, Spring boot/AnaGourmetMicroservices",
+    "last_opened_file_path": "C:/Users/practica.tecnologia/Desktop/Programa Prueba INFORME, Spring boot/HomesentryMicroservices",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/practica.tecnologia/Desktop/Programa Prueba INFORME, Spring boot/HomesentryMicroservices/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -79,16 +96,28 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MicroserviceEurekaApplication">
+  <component name="RunManager" selected="Spring Boot.MicroserviceBranchesApplication">
     <configuration name="MicroserviceBranchesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
       <module name="microservice-branches" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.branches.MicroserviceBranchesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MicroserviceCategoriesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
       <module name="microservice-categories" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.categories.MicroserviceCategoriesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,33 +145,68 @@
       </method>
     </configuration>
     <configuration name="MicroserviceInventoriesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
       <module name="microservice-inventories" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.inventories.MicroserviceInventoriesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MicroserviceLinesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
       <module name="microservice-lines" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.lines.MicroserviceLinesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MicroserviceReferencesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
       <module name="microservice-references" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.references.MicroserviceReferencesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MicroserviceSubcategoriesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
       <module name="microservice-subcategories" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.subcategories.MicroserviceSubcategoriesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MicroserviceBranchesApplication" />
+      <item itemvalue="Spring Boot.MicroserviceCategoriesApplication" />
+      <item itemvalue="Spring Boot.MicroserviceConfigApplication" />
+      <item itemvalue="Spring Boot.MicroserviceEurekaApplication" />
+      <item itemvalue="Spring Boot.MicroserviceGatewayApplication" />
+      <item itemvalue="Spring Boot.MicroserviceInventoriesApplication" />
+      <item itemvalue="Spring Boot.MicroserviceLinesApplication" />
+      <item itemvalue="Spring Boot.MicroserviceReferencesApplication" />
+      <item itemvalue="Spring Boot.MicroserviceSubcategoriesApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -163,6 +227,11 @@
       <workItem from="1727968657705" duration="12704000" />
       <workItem from="1727988267482" duration="1703000" />
       <workItem from="1728046995710" duration="8990000" />
+      <workItem from="1728071932959" duration="5150000" />
+      <workItem from="1728408397227" duration="261000" />
+      <workItem from="1728408670514" duration="3468000" />
+      <workItem from="1728416054465" duration="208000" />
+      <workItem from="1728416275224" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -180,7 +249,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727991680785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="build all microservices">
+      <option name="closed" value="true" />
+      <created>1728077727378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728077727378</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creación de paquetes para cada microservicio">
+      <option name="closed" value="true" />
+      <created>1728077810006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728077810006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +273,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="build all microservices" />
+    <MESSAGE value="Creación de paquetes para cada microservicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creación de paquetes para cada microservicio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

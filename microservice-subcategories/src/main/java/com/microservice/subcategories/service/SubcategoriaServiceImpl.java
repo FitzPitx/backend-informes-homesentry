@@ -48,4 +48,9 @@ public class SubcategoriaServiceImpl implements ISubcategoriaService{
 //        subcategoriaToUpdate.setExcluidoCeg(subcategoria.getExcluidoCeg());
         subcategoriaRepository.save(subcategoriaToUpdate);
     }
+
+    @Override
+    public List<Subcategoria> findSubcategoriaById(SubcategoriaId codcatSce) {
+        return subcategoriaRepository.findSubcategoriaById(codcatSce);
+    }
 }

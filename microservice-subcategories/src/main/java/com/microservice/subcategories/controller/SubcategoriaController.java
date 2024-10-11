@@ -35,4 +35,10 @@ public class SubcategoriaController {
     public void delete(SubcategoriaId id) {
         subcategoriaService.delete(id);
     }
+
+    //Endpoint para ver la lista de subcategorias de una categoria
+    @GetMapping("/search-by-category/{codcatSce}")
+    public ResponseEntity<?> findByIdCategory(@PathVariable SubcategoriaId codcatSce) {
+        return ResponseEntity.ok(subcategoriaService.findSubcategoriaById(codcatSce));
+    }
 }

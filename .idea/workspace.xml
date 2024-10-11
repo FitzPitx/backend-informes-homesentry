@@ -4,38 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Conexión exitosa a DB con Credenciales .env">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/controller/SucursalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/entities/Sucursal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/persistence/ISucursalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/service/ISucursalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/service/SucursalServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/controller/CategoriaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/entities/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/persistence/CategoriaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/CategoriaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/ICategoriaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/controller/LineaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/entities/Linea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/entities/LineaId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/persistence/ILineaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/service/ILineaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/service/LineaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/controller/SubcategoriaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/Subcategoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/SubcategoriaId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/persistence/ISubcategoriaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/ISubcategoriaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/SubcategoriaServiceImpl.java" afterDir="false" />
+    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/client/CategoriaClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/dto/SubcategoriaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/http/response/SubcategoriesByCategoriesResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-branches/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-branches/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-categories/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-lines/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-lines/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/entities/Lines.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/Subcategories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/MicroserviceCategoriesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/MicroserviceCategoriesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/controller/CategoriaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/persistence/CategoriaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/persistence/CategoriaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/CategoriaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/CategoriaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/ICategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/ICategoriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-lines/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-lines/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/controller/SubcategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/controller/SubcategoriaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/Subcategoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/Subcategoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/persistence/ISubcategoriaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/persistence/ISubcategoriaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/ISubcategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/ISubcategoriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/SubcategoriaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/SubcategoriaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MicroserviceBranchesApplication">
+  <component name="RunManager" selected="Spring Boot.MicroserviceEurekaApplication">
     <configuration name="MicroserviceBranchesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="envFilePaths">
         <option value="$PROJECT_DIR$/.env" />
@@ -260,7 +248,8 @@
       <workItem from="1728416275224" duration="7801000" />
       <workItem from="1728501758572" duration="8178000" />
       <workItem from="1728579799294" duration="11000" />
-      <workItem from="1728660686608" duration="2873000" />
+      <workItem from="1728660686608" duration="7936000" />
+      <workItem from="1728674104269" duration="8779000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

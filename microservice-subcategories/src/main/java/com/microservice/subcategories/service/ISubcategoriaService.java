@@ -16,4 +16,6 @@ public interface ISubcategoriaService {
     void delete(SubcategoriaId id);
 
     void update(SubcategoriaId id, Subcategoria subcategoria);
+
+    List<Subcategoria> findSubcategoriaById(SubcategoriaId id);
 }

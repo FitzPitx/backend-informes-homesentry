@@ -41,4 +41,9 @@ public class CategoriaController {
     public void updateCategory(Integer id, @RequestBody Categoria categoria) {
         categoriaService.updateCategory(id, categoria);
     }
+
+    @GetMapping("/search-categories/{idCategory}")
+    public ResponseEntity<?> findAllSubcategoriesByCategoryId(@PathVariable Integer idCategory) {
+        return ResponseEntity.ok(categoriaService.getSubcategoriesByCategoryId(idCategory));
+    }
 }

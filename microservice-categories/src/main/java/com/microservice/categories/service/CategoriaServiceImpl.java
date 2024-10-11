@@ -1,6 +1,9 @@
 package com.microservice.categories.service;
 
+import com.microservice.categories.client.CategoriaClient;
+import com.microservice.categories.dto.SubcategoriaDTO;
 import com.microservice.categories.entities.Categoria;
+import com.microservice.categories.http.response.SubcategoriesByCategoriesResponse;
 import com.microservice.categories.persistence.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,6 +15,9 @@ public class CategoriaServiceImpl implements ICategoriaService {
 
     @Autowired
     private CategoriaRepository categoriaRepository;
+
+    @Autowired
+    private CategoriaClient categoriaClient;
 
     @Override
     public List<Categoria> getAllCategory() {
@@ -49,4 +55,21 @@ public class CategoriaServiceImpl implements ICategoriaService {
             categoriaRepository.save(categoriaToUpdate);
         }
     }
+
+    @Override
+    public SubcategoriesByCategoriesResponse getSubcategoriesByCategoryId(Integer idCategory) {
+        // Consultar las subcategorias por categoria
+        Categoria categoria = categoriaRepository.findById(idCategory).orElse(new Categoria());
+        // Obtener las subcategorias por categoria
+        List<SubcategoriaDTO> subcategoriaDTOList = categoriaClient.findAllSubcategoriesByCategoryId(idCategory);
+        return SubcategoriesByCategoriesResponse.builder()
+                .nomsubcatSce(categoria.getNomcatCeg())
+                .estadoSce(categoria.getEstadoCeg())
+                .usuarioCreo(categoria.getUsuarioCreo())
+                .fechaCreacion(categoria.getFechaCreacion())
+                .subcategoriesDTOList(subcategoriaDTOList)
+                .build();
+    }
+
+
 }

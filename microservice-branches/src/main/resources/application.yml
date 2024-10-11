@@ -6,7 +6,7 @@ spring:
     name: msvc-branches
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://172.16.0.20:1433;databaseName=reportes;encrypt=true;trustServerCertificate=true;
+    url: jdbc:sqlserver://172.16.0.20:1433;databaseName=sucursales;encrypt=true;trustServerCertificate=true;
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:

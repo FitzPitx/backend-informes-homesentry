@@ -11,7 +11,6 @@ import lombok.*;
 @Table(name = "subcategorias")
 public class Subcategoria {
     @EmbeddedId
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private SubcategoriaId id;
 
     @jakarta.validation.constraints.Size(max = 100)

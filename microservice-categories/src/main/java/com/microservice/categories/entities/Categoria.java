@@ -8,12 +8,12 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "categoria")
+@Table(name = "categorias")
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "COD_CEG", nullable = false)
-    private Integer id;
+    private Integer codCeg;
 
     @jakarta.validation.constraints.Size(max = 28)
     @Column(name = "NOMCAT_CEG", length = 28)

@@ -16,7 +16,7 @@ public class SubcategoriaServiceImpl implements ISubcategoriaService{
 
     @Override
     public List<Subcategoria> findAll() {
-        return (List<Subcategoria>) subcategoriaRepository.findAll();
+        return subcategoriaRepository.findAll();
     }
 
     @Override
@@ -37,20 +37,11 @@ public class SubcategoriaServiceImpl implements ISubcategoriaService{
     @Override
     public void update(SubcategoriaId id, Subcategoria subcategoria) {
         Subcategoria subcategoriaToUpdate = subcategoriaRepository.findById(id).orElseThrow();
-        /**
-         *  Dejar estos metodos cuando se quieran implementar en un futuro
-         */
-//        subcategoriaToUpdate.setNomsubcatCeg(subcategoria.getNomsubcatCeg());
-//        subcategoriaToUpdate.setEstadoCeg(subcategoria.getEstadoCeg());
-//        subcategoriaToUpdate.setUsuarioCreo(subcategoria.getUsuarioCreo());
-//        subcategoriaToUpdate.setFechaCreacion(subcategoria.getFechaCreacion());
-//        subcategoriaToUpdate.setCodcatCeg(subcategoria.getCodcatCeg());
-//        subcategoriaToUpdate.setExcluidoCeg(subcategoria.getExcluidoCeg());
         subcategoriaRepository.save(subcategoriaToUpdate);
     }
 
     @Override
-    public List<Subcategoria> findSubcategoriaById(SubcategoriaId codcatSce) {
-        return subcategoriaRepository.findSubcategoriaById(codcatSce);
+    public List<Subcategoria> findSubcategorieByCategoryId(Integer idCategoria) {
+        return subcategoriaRepository.findById_IdCategoria(idCategoria);
     }
 }

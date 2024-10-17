@@ -13,5 +13,5 @@ public interface ICategoriaService {
     Categoria saveCategory(Categoria supplier);
     void deleteCategory(Integer id);
     void updateCategory(Integer id, Categoria categoria);
-    SubcategoriesByCategoriesResponse getSubcategoriesByCategoryId(Integer idCategory);
+    SubcategoriesByCategoriesResponse findSubcategoriesByIdCategory(Integer idCategoria);
 }

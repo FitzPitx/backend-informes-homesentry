@@ -1,6 +1,6 @@
 package com.microservice.categories.service;
 
-import com.microservice.categories.client.CategoriaClient;
+import com.microservice.categories.client.SubcategoriaClient;
 import com.microservice.categories.dto.SubcategoriaDTO;
 import com.microservice.categories.entities.Categoria;
 import com.microservice.categories.http.response.SubcategoriesByCategoriesResponse;
@@ -17,7 +17,7 @@ public class CategoriaServiceImpl implements ICategoriaService {
     private CategoriaRepository categoriaRepository;
 
     @Autowired
-    private CategoriaClient categoriaClient;
+    private SubcategoriaClient categoriaClient;
 
     @Override
     public List<Categoria> getAllCategory() {
@@ -57,17 +57,15 @@ public class CategoriaServiceImpl implements ICategoriaService {
     }
 
     @Override
-    public SubcategoriesByCategoriesResponse getSubcategoriesByCategoryId(Integer idCategory) {
-        // Consultar las subcategorias por categoria
-        Categoria categoria = categoriaRepository.findById(idCategory).orElse(new Categoria());
-        // Obtener las subcategorias por categoria
-        List<SubcategoriaDTO> subcategoriaDTOList = categoriaClient.findAllSubcategoriesByCategoryId(idCategory);
+    public SubcategoriesByCategoriesResponse findSubcategoriesByIdCategory(Integer idCategoria) {
+        Categoria categoria = categoriaRepository.findById(idCategoria)
+                .orElseThrow(() -> new IllegalArgumentException("Category not found"));
+
+        List<SubcategoriaDTO> subcategoriesDTOList = categoriaClient.findAllSubcategoriesByCategory(idCategoria);
+
         return SubcategoriesByCategoriesResponse.builder()
-                .nomsubcatSce(categoria.getNomcatCeg())
-                .estadoSce(categoria.getEstadoCeg())
-                .usuarioCreo(categoria.getUsuarioCreo())
-                .fechaCreacion(categoria.getFechaCreacion())
-                .subcategoriesDTOList(subcategoriaDTOList)
+                .descripcion(categoria.getNomcatCeg())
+                .subcategoriesDTOList(subcategoriesDTOList)
                 .build();
     }
 

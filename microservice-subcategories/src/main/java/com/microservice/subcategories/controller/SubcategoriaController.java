@@ -20,9 +20,13 @@ public class SubcategoriaController {
         return ResponseEntity.ok(subcategoriaService.findAll());
     }
 
-    @GetMapping("/search/{id}")
-    public ResponseEntity<?> findById(SubcategoriaId id) {
-        return ResponseEntity.ok(subcategoriaService.findById(id));
+    @GetMapping("/search/{idCat}/{idSub}")
+    public ResponseEntity<?> findById(@PathVariable Integer idCat, @PathVariable Integer idSub) {
+        SubcategoriaId subcategoriaId = new SubcategoriaId();
+        subcategoriaId.setIdCategoria(idCat);
+        subcategoriaId.setIdSubcategoria(idSub);
+
+        return ResponseEntity.ok(subcategoriaService.findById(subcategoriaId));
     }
 
     @PostMapping("/save")
@@ -37,8 +41,8 @@ public class SubcategoriaController {
     }
 
     //Endpoint para ver la lista de subcategorias de una categoria
-    @GetMapping("/search-by-category/{codcatSce}")
-    public ResponseEntity<?> findByIdCategory(@PathVariable SubcategoriaId codcatSce) {
-        return ResponseEntity.ok(subcategoriaService.findSubcategoriaById(codcatSce));
+    @GetMapping("/search-by-category/{idCategoria}")
+    public ResponseEntity<?> findByIdCategory(@PathVariable Integer idCategoria) {
+        return ResponseEntity.ok(subcategoriaService.findSubcategorieByCategoryId(idCategoria));
     }
 }

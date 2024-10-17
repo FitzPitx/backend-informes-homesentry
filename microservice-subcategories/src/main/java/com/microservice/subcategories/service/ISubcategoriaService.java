@@ -17,5 +17,5 @@ public interface ISubcategoriaService {
 
     void update(SubcategoriaId id, Subcategoria subcategoria);
 
-    List<Subcategoria> findSubcategoriaById(SubcategoriaId id);
+    List<Subcategoria> findSubcategorieByCategoryId(Integer idCategoria);
 }

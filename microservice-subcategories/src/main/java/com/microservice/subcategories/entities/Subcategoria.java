@@ -1,8 +1,18 @@
 package com.microservice.subcategories.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.hibernate.annotations.Nationalized;
 
+import java.time.Instant;
+
+@Getter
+@Setter
 @Data
 @Builder
 @NoArgsConstructor
@@ -13,19 +23,24 @@ public class Subcategoria {
     @EmbeddedId
     private SubcategoriaId id;
 
-    @jakarta.validation.constraints.Size(max = 100)
-    @Column(name = "NOMSUBCAT_SCE", length = 100)
-    private String nomsubcatSce;
+    @Size(max = 50)
+    @NotNull
+    @Nationalized
+    @Column(name = "descripcion", nullable = false, length = 50)
+    private String descripcion;
 
-    @Column(name = "ESTADO_SCE")
-    private Short estadoSce;
+    @NotNull
+    @Column(name = "estado", nullable = false)
+    private Integer estado;
 
-    @jakarta.validation.constraints.Size(max = 12)
-    @Column(name = "usuario_creo", length = 12)
+    @Size(max = 50)
+    @NotNull
+    @Nationalized
+    @Column(name = "usuario_creo", nullable = false, length = 50)
     private String usuarioCreo;
 
-    @jakarta.validation.constraints.Size(max = 21)
-    @Column(name = "fecha_creacion", length = 21)
-    private String fechaCreacion;
+    @NotNull
+    @Column(name = "fecha_creacion", nullable = false)
+    private Instant fechaCreacion;
 
 }

@@ -14,9 +14,6 @@ import java.util.List;
 @Builder
 public class SubcategoriesByCategoriesResponse {
 
-    private String nomsubcatSce;
-    private Short estadoSce;
-    private String usuarioCreo;
-    private String fechaCreacion;
+    private String descripcion;
     private List<SubcategoriaDTO> subcategoriesDTOList;
 }

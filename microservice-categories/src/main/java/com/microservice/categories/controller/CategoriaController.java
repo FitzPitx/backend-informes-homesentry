@@ -2,6 +2,7 @@ package com.microservice.categories.controller;
 
 
 import com.microservice.categories.entities.Categoria;
+import com.microservice.categories.http.response.SubcategoriesByCategoriesResponse;
 import com.microservice.categories.service.ICategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,7 +22,7 @@ public class CategoriaController {
     }
 
     @GetMapping("/search/{id}")
-    public ResponseEntity<?> getCategoryById(Integer id) {
+    public ResponseEntity<?> getCategoryById(@PathVariable Integer id) {
         return ResponseEntity.ok(categoriaService.getCategoryById(id));
     }
 
@@ -32,7 +33,7 @@ public class CategoriaController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public void deleteCategory(Integer id) {
+    public void deleteCategory(@PathVariable Integer id) {
         categoriaService.deleteCategory(id);
     }
 
@@ -42,8 +43,13 @@ public class CategoriaController {
         categoriaService.updateCategory(id, categoria);
     }
 
-    @GetMapping("/search-categories/{idCategory}")
-    public ResponseEntity<?> findAllSubcategoriesByCategoryId(@PathVariable Integer idCategory) {
-        return ResponseEntity.ok(categoriaService.getSubcategoriesByCategoryId(idCategory));
+    @GetMapping("/search-subcategories/{idCategoria}")
+    public ResponseEntity<?> findAllSubcategoriesByCategoryId(@PathVariable Integer idCategoria) {
+        try {
+            SubcategoriesByCategoriesResponse response = categoriaService.findSubcategoriesByIdCategory(idCategoria);
+            return ResponseEntity.ok(response);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Categoria no encontrada");
+        }
     }
 }

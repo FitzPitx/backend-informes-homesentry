@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SubcategoriaDTO {
 
-    private String nomsubcatSce;
-    private Short estadoSce;
+    private String descripcion;
+    private Short estado;
     private String usuarioCreo;
     private String fechaCreacion;
 }

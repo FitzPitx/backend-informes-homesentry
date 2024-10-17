@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 
 @FeignClient(name = "msvc-subcategories", url = "localhost:8091/api/subcategorias")
-public interface CategoriaClient {
+public interface SubcategoriaClient {
 
-    @GetMapping("/search-by-category/{idCategory}")
-    List<SubcategoriaDTO> findAllSubcategoriesByCategoryId(@PathVariable Integer idCategory);
+    @GetMapping("/search-by-category/{idCategoria}")
+    List<SubcategoriaDTO> findAllSubcategoriesByCategory(@PathVariable Integer idCategoria);
+
 }

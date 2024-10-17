@@ -11,7 +11,7 @@
       password: ${DB_PASSWORD}
     jpa:
       hibernate:
-        ddl-auto: create
+        ddl-auto: update
       database: sql_server
       database-platform: org.hibernate.dialect.SQLServerDialect
     config:

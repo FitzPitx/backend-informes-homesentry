@@ -5,26 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Conexión exitosa a DB con Credenciales .env">
+      <change afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/controller/ReferenciaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/entities/Referencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/repository/IReferenciaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/service/IReferenciaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/service/ReferenciaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f19baedc-a4b2-4d20-b4b6-ee15ecf74832.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f19baedc-a4b2-4d20-b4b6-ee15ecf74832.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e792c52-ec67-46d9-86b0-cd18c7559d6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e792c52-ec67-46d9-86b0-cd18c7559d6d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/client/CategoriaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/client/SubcategoriaClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/controller/CategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/dto/SubcategoriaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/dto/SubcategoriaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/entities/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/entities/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/http/response/SubcategoriesByCategoriesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/http/response/SubcategoriesByCategoriesResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/CategoriaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/CategoriaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/ICategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/service/ICategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/controller/SubcategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/controller/SubcategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/Subcategoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/Subcategoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/SubcategoriaId.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/entities/SubcategoriaId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/persistence/ISubcategoriaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/persistence/ISubcategoriaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/ISubcategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/ISubcategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/SubcategoriaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/service/SubcategoriaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/entities/Sucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/entities/Sucursal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/controller/LineaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/controller/LineaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/entities/Linea.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/entities/Linea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-lines/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-lines/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-references/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-references/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/MicroserviceReferencesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/MicroserviceReferencesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/entities/References.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-references/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-references/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,39 +66,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MicroserviceCategoriesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MicroserviceEurekaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MicroserviceInventoriesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MicroserviceSubcategoriesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/practica.tecnologia/Desktop/Programa Prueba INFORME, Spring boot/AnaGourmetMicroservices&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/practica.tecnologia/Desktop/Programa Prueba INFORME, Spring boot/HomesentryMicroservices/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.HomesentryMicroservices [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MicroserviceBranchesApplication.executor": "Run",
+    "Spring Boot.MicroserviceCategoriesApplication.executor": "Run",
+    "Spring Boot.MicroserviceEurekaApplication.executor": "Run",
+    "Spring Boot.MicroserviceInventoriesApplication.executor": "Run",
+    "Spring Boot.MicroserviceLinesApplication.executor": "Run",
+    "Spring Boot.MicroserviceReferencesApplication.executor": "Run",
+    "Spring Boot.MicroserviceSubcategoriesApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/practica.tecnologia/Desktop/SpringBootProjects/HomesentryMicroservices",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/practica.tecnologia/Desktop/Programa Prueba INFORME, Spring boot/HomesentryMicroservices/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.microservice.references.entities" />
       <recent name="com.microservice.lines.entities" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -253,6 +267,7 @@
       <workItem from="1728674104269" duration="8866000" />
       <workItem from="1728998728176" duration="5057000" />
       <workItem from="1729093386231" duration="17634000" />
+      <workItem from="1729176384650" duration="15122000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

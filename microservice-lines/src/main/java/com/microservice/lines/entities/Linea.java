@@ -10,7 +10,7 @@ import java.time.Instant;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "lineas")
+@Table(name = "linea")
 public class Linea {
     @EmbeddedId
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,85 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-242.23339.11">
-    <data-source name="reportes@172.16.0.20" uuid="f19baedc-a4b2-4d20-b4b6-ee15ecf74832">
+    <data-source name="@172.16.0.20" uuid="7e58b16d-bbaa-4826-bc12-482de7d1d79d">
       <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.3" driver-name="Microsoft JDBC Driver 12.8 for SQL Server" driver-version="12.8.1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="12.8">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
       <user-name>homesentry</user-name>
       <schema-mapping>
         <introspection-scope>
           <node negative="1">
-            <node kind="database" qname="@">
-              <node kind="schema" qname="@" />
-            </node>
+            <node kind="database" negative="1" />
             <node kind="database">
               <name qname="categorias" />
               <name qname="lineas" />
+              <name qname="referencias" />
+              <name qname="reportes" />
               <name qname="subcategorias" />
               <name qname="sucursales" />
+              <node kind="schema" qname="dbo" />
             </node>
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="subcategorias@172.16.0.20" uuid="33a37906-6d80-4f21-9536-f82af3edc7bb">
-      <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.3" driver-name="Microsoft JDBC Driver 12.8 for SQL Server" driver-version="12.8.1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="12.8">
-        <extra-name-characters>$#@</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <user-name>homesentry</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="sucursales@172.16.0.20" uuid="94d0eea0-9ed2-45df-93fc-cd96934296c5">
-      <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.3" driver-name="Microsoft JDBC Driver 12.8 for SQL Server" driver-version="12.8.1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="12.8">
-        <extra-name-characters>$#@</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <user-name>homesentry</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="categorias@172.16.0.20" uuid="07930429-df51-4290-8386-48ee49600b7e">
-      <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.3" driver-name="Microsoft JDBC Driver 12.8 for SQL Server" driver-version="12.8.1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="12.8">
-        <extra-name-characters>$#@</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <user-name>homesentry</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="lineas@172.16.0.20" uuid="5e792c52-ec67-46d9-86b0-cd18c7559d6d">
-      <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.3" driver-name="Microsoft JDBC Driver 12.8 for SQL Server" driver-version="12.8.1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="12.8">
-        <extra-name-characters>$#@</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <user-name>homesentry</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
           </node>
         </introspection-scope>
       </schema-mapping>

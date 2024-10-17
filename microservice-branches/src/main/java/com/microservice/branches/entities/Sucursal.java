@@ -10,7 +10,7 @@ import java.time.Instant;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "sucursales")
+@Table(name = "sucursal")
 public class Sucursal {
     @Id
     @jakarta.validation.constraints.NotNull

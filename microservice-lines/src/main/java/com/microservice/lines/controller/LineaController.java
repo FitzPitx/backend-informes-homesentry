@@ -20,6 +20,7 @@ public class LineaController {
         return ResponseEntity.ok(lineaService.findAll());
     }
 
+    //Cambiar el id para que ser reciban con las tres llaves de Categoria, subcategoria, y Linea
     @GetMapping("/search/{id}")
     public ResponseEntity<?> findById(@PathVariable LineaId id) {
         return ResponseEntity.ok(lineaService.findById(id));

@@ -42,4 +42,10 @@ public class LineaController {
     public ResponseEntity<?> findByIdSubcategory(@PathVariable Integer idCategoria, @PathVariable Integer idSubcategoria){
         return ResponseEntity.ok(lineaService.findLinesBySubcategoryId(idCategoria, idSubcategoria));
     }
+
+    //Endpoint para ver las referencias de una linea
+    @GetMapping("/references-by-line/{idCategoria}/{idSubcategoria}/{idLinea}")
+    public ResponseEntity<?> findReferencesByLineId(@PathVariable Integer idCategoria, @PathVariable Integer idSubcategoria, @PathVariable Integer idLinea){
+        return ResponseEntity.ok(lineaService.findReferencesByLineId(idCategoria, idSubcategoria, idLinea));
+    }
 }

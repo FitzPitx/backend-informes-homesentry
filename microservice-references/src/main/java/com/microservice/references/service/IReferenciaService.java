@@ -10,13 +10,14 @@ public interface IReferenciaService {
 
     Page<Referencia> findAll(Pageable pageable);
 
-    Referencia findById(String id);
+    Referencia findById(Long idLinea);
 
     void save(Referencia referencia);
 
-    void delete(String id);
+    void delete(Long idLinea);
 
-    void update(String id, Referencia referencia);
+    void update(Long idLinea, Referencia referencia);
 
     // Lista de referencias por linea
+    List<Referencia> findReferencesByLineId(Long idCategoria, Long idSubcategoria, Long idLinea);
 }

@@ -10,4 +10,6 @@ import java.util.List;
 @Repository
 public interface ILineaRepository extends CrudRepository<Linea, LineaId> {
     List<Linea> findById_CodcatLeaAndId_CodsubLea(Integer idCategoria,Integer idSubcategoria);
+
+    List<Linea> findById_CodcatLeaAndId_CodsubLeaAndId_CodlinLea(Integer idCategoria,Integer idSubcategoria,Integer idLinea);
 }

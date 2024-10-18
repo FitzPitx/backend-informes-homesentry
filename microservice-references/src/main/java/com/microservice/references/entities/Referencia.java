@@ -1,7 +1,6 @@
 package com.microservice.references.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.annotations.Nationalized;
@@ -13,31 +12,26 @@ import org.hibernate.annotations.Nationalized;
 @Entity
 @Table(name = "referencias")
 public class Referencia {
-    @Id
-    @Size(max = 50)
+    @EmbeddedId
+    private ReferenciaId id;
+
     @Nationalized
-    @Column(name = "COD_MRI", nullable = false, length = 50)
-    private String codMri;
-
-    @Column(name = "CATEGORIA_MRI", columnDefinition = "tinyint not null")
-    private Short categoriaMri;
-
-    @Column(name = "SUBCATEGORIA_MRI", columnDefinition = "tinyint not null")
-    private Short subcategoriaMri;
-
-    @Column(name = "LINEA_MRI", columnDefinition = "tinyint not null")
-    private Short lineaMri;
-
-    @NotNull
-    @Column(name = "DESCOD_MRI", nullable = false)
+    @Lob
+    @Column(name = "DESCOD_MRI")
     private String descodMri;
 
+    @Nationalized
+    @Lob
     @Column(name = "REFP1_MRI")
     private String refp1Mri;
 
+    @Nationalized
+    @Lob
     @Column(name = "REFP2_MRI")
     private String refp2Mri;
 
+    @Nationalized
+    @Lob
     @Column(name = "DESADI_MRI")
     private String desadiMri;
 
@@ -63,10 +57,13 @@ public class Referencia {
     @Column(name = "PVTA2_MRI")
     private Integer pvta2Mri;
 
-
+    @Nationalized
+    @Lob
     @Column(name = "IVA_MRI")
     private String ivaMri;
 
+    @Nationalized
+    @Lob
     @Column(name = "IVACOM_MRI")
     private String ivacomMri;
 
@@ -78,9 +75,13 @@ public class Referencia {
     @Column(name = "TIPOPROD_MRI", length = 50)
     private String tipoprodMri;
 
+    @Nationalized
+    @Lob
     @Column(name = "ULTCOS_MRI")
     private String ultcosMri;
 
+    @Nationalized
+    @Lob
     @Column(name = "EMPAQ_MRI")
     private String empaqMri;
 
@@ -197,12 +198,16 @@ public class Referencia {
     @Column(name = "ULTEXI_MRI", length = 50)
     private String ultexiMri;
 
+    @Nationalized
+    @Lob
     @Column(name = "UNICEDI_MRI")
     private String unicediMri;
 
     @Column(name = "PREORIG_MRI")
     private Integer preorigMri;
 
+    @Nationalized
+    @Lob
     @Column(name = "PROVEED_MRI")
     private String proveedMri;
 
@@ -301,6 +306,8 @@ public class Referencia {
     @Column(name = "TIPOPESO_MRI", length = 50)
     private String tipopesoMri;
 
+    @Nationalized
+    @Lob
     @Column(name = "PESOMED_MRI")
     private String pesomedMri;
 

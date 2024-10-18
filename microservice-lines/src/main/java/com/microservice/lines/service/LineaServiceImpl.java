@@ -30,9 +30,15 @@ public class LineaServiceImpl implements ILineaService{
         lineaRepository.save(linea);
 
     }
-
     @Override
     public void delete(LineaId id) {
         lineaRepository.deleteById(id);
     }
+
+    @Override
+    public List<Linea> findLinesBySubcategoryId(Integer idCategoria, Integer idSubcategoria) {
+        return lineaRepository.findById_CodcatLeaAndId_CodsubLea(idCategoria, idSubcategoria);
+    }
+
+
 }

@@ -14,4 +14,6 @@ public interface ILineaService {
     void save(Linea linea);
 
     void delete(LineaId id);
+
+    List<Linea> findLinesBySubcategoryId(Integer idCategoria, Integer idSubcategoria);
 }

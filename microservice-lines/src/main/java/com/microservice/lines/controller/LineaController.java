@@ -36,4 +36,10 @@ public class LineaController {
     public void delete(@PathVariable LineaId id) {
         lineaService.delete(id);
     }
+
+    //Endpoint para ver la lista de lineas de una subcategoria
+    @GetMapping("/search-by-subcategory/{idCategoria}/{idSubcategoria}")
+    public ResponseEntity<?> findByIdSubcategory(@PathVariable Integer idCategoria, @PathVariable Integer idSubcategoria){
+        return ResponseEntity.ok(lineaService.findLinesBySubcategoryId(idCategoria, idSubcategoria));
+    }
 }

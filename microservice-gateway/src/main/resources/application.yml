@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: msvc-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      mvc:
+        routes:
+          - id: msvc-branches
+            uri: http://localhost:8094
+            predicates:
+              - Path=/api/sucursales/**
+          - id: msvc-categories
+            uri: http://localhost:9090
+            predicates:
+              - Path=/api/categorias/**
+          - id: msvc-inventories
+            uri: http://localhost:8090
+            predicates:
+              - Path=/api/inventarios/**
+          - id: msvc-lines
+            uri: http://localhost:8093
+            predicates:
+              - Path=/api/lineas/**
+          - id: msvc-references
+            uri: http://localhost:8092
+            predicates:
+              - Path=/api/referencias/**
+          - id: msvc-subcategories
+            uri: http://localhost:8091
+            predicates:
+              - Path=/api/subcategorias/**

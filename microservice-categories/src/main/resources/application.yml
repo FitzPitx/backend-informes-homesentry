@@ -1,25 +1,5 @@
-  server:
-    port: 9090
-
-  spring:
-    application:
-      name: msvc-categories
-    datasource:
-      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-      url: jdbc:sqlserver://172.16.0.20:1433;databaseName=categorias;encrypt=true;trustServerCertificate=true;
-      username: ${DB_USERNAME}
-      password: ${DB_PASSWORD}
-    jpa:
-      hibernate:
-        ddl-auto: update
-      database: sql_server
-      database-platform: org.hibernate.dialect.SQLServerDialect
-    config:
-      import: optional:configserver:http://localhost:8888
-
-  eureka:
-    instance:
-      hostname: localhost
-    client:
-      service-url:
-        defaultZone: http://localhost:8761/eureka
+spring:
+   application:
+     name: msvc-categories
+   config:
+     import: optional:configserver:http://localhost:8888

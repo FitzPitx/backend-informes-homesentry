@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Conexión exitosa a DB con Credenciales .env">
-      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-branches.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-categories.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-eureka.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-gateway.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-references/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-references/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-branches/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/java/com/microservice/config/MicroserviceConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/java/com/microservice/config/MicroserviceConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-eureka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +68,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MicroserviceBranchesApplication.executor": "Run",
     "Spring Boot.MicroserviceCategoriesApplication.executor": "Run",
+    "Spring Boot.MicroserviceConfigApplication.executor": "Run",
     "Spring Boot.MicroserviceEurekaApplication.executor": "Run",
     "Spring Boot.MicroserviceGatewayApplication.executor": "Run",
     "Spring Boot.MicroserviceInventoriesApplication.executor": "Run",
@@ -259,7 +263,8 @@
       <workItem from="1729176384650" duration="20550000" />
       <workItem from="1729261161837" duration="20383000" />
       <workItem from="1729520151069" duration="1403000" />
-      <workItem from="1729528996144" duration="7202000" />
+      <workItem from="1729528996144" duration="8392000" />
+      <workItem from="1729611884442" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

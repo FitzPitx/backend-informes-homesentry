@@ -14,6 +14,7 @@
           <node negative="1">
             <node kind="database" negative="1" />
             <node kind="database">
+              <name qname="acumulado_categorias" />
               <name qname="categorias" />
               <name qname="lineas" />
               <name qname="referencias" />

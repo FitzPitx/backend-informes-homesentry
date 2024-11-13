@@ -1,0 +1,20 @@
+GET http://localhost:8095/api/categorias22/categorias-sucursal-resumen
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-13T090735.500.json
+
+###
+
+GET http://localhost:8095/api/acumulado22/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T120310.200.json
+
+###
+

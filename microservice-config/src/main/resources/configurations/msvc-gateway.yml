@@ -37,3 +37,9 @@ spring:
             uri: http://localhost:8091
             predicates:
               - Path=/api/subcategorias/**
+          - id: msvc-acumulado
+            uri: http://localhost:8095
+            predicates:
+              - Path=/api/categorias22/**
+#              - Path=/api/categorias23/**
+#              - Path=/api/categorias24/**

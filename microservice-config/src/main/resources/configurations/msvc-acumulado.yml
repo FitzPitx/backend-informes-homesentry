@@ -1,0 +1,23 @@
+server:
+  port: 8095
+
+spring:
+  application:
+    name: msvc-acumulado
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://172.16.0.20:1433;databaseName=acumulado_categorias;encrypt=true;trustServerCertificate=true;
+    username: homesentry
+    password: Sentry2024$
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: sql_server
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

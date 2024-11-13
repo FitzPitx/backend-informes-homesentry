@@ -1,6 +1,5 @@
 package com.microservice.categories.dto;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SubcategoriaDTO {
 
+    private SubcategoriaIdDTO id;
     private String descripcion;
     private Short estado;
     private String usuarioCreo;

@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Conexión exitosa a DB con Credenciales .env">
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/CategoriaController22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/CategoriaSucursalResumen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/entities/AcumCat22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AcumCat22Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AcumCat22Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/WebConfigBranches.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/WebConfigCategories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/dto/SubcategoriaIdDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-acumulado.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/WebConfigLines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/WebConfigReferences.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/WebConfigSubcategories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e58b16d-bbaa-4826-bc12-482de7d1d79d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7e58b16d-bbaa-4826-bc12-482de7d1d79d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaMesDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenSucursalDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/controller/SucursalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-branches/src/main/java/com/microservice/branches/controller/SucursalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/controller/CategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/dto/SubcategoriaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-categories/src/main/java/com/microservice/categories/dto/SubcategoriaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/controller/LineaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-lines/src/main/java/com/microservice/lines/controller/LineaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/controller/ReferenciaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-references/src/main/java/com/microservice/references/controller/ReferenciaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/controller/SubcategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-subcategories/src/main/java/com/microservice/subcategories/controller/SubcategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/CategoriaController22.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/CategoriaController22.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/CategoriaSucursalResumen.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/CategoriaSucursalResumen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AcumCat22Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AcumCat22Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AcumCat22Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AcumCat22Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,50 +59,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.MicroserviceAcumuladoApplication | #1.executor": "Run",
-    "HTTP Request.MicroserviceAcumuladoApplication | #2.executor": "Run",
-    "Maven.HomesentryMicroservices [clean,install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.MicroserviceAcumuladoApplication.executor": "Run",
-    "Spring Boot.MicroserviceBranchesApplication.executor": "Run",
-    "Spring Boot.MicroserviceCategoriesApplication.executor": "Run",
-    "Spring Boot.MicroserviceConfigApplication.executor": "Run",
-    "Spring Boot.MicroserviceEurekaApplication.executor": "Run",
-    "Spring Boot.MicroserviceGatewayApplication.executor": "Run",
-    "Spring Boot.MicroserviceInventoriesApplication.executor": "Run",
-    "Spring Boot.MicroserviceLinesApplication.executor": "Run",
-    "Spring Boot.MicroserviceReferencesApplication.executor": "Run",
-    "Spring Boot.MicroserviceSubcategoriesApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "23",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/practica.tecnologia/Desktop/SpringBootProjects/HomesentryMicroservices",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/practica.tecnologia/Desktop/SpringBootProjects/HomesentryMicroservices/microservice-acumulado-categorias/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.MicroserviceAcumuladoApplication | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.MicroserviceAcumuladoApplication | #2.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.HomesentryMicroservices [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MicroserviceAcumuladoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceBranchesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceCategoriesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceConfigApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceEurekaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceInventoriesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceLinesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceReferencesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MicroserviceSubcategoriesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;23&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/practica.tecnologia/Desktop/SpringBootProjects/HomesentryMicroservices&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/practica.tecnologia/Desktop/SpringBootProjects/HomesentryMicroservices/microservice-acumulado-categorias/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -260,12 +243,12 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.MicroserviceAcumuladoApplication" />
+      <item itemvalue="Spring Boot.MicroserviceGatewayApplication" />
       <item itemvalue="Spring Boot.MicroserviceReferencesApplication" />
       <item itemvalue="Spring Boot.MicroserviceBranchesApplication" />
       <item itemvalue="Spring Boot.MicroserviceCategoriesApplication" />
       <item itemvalue="Spring Boot.MicroserviceConfigApplication" />
       <item itemvalue="Spring Boot.MicroserviceEurekaApplication" />
-      <item itemvalue="Spring Boot.MicroserviceGatewayApplication" />
       <item itemvalue="Spring Boot.MicroserviceInventoriesApplication" />
       <item itemvalue="Spring Boot.MicroserviceLinesApplication" />
       <item itemvalue="Spring Boot.MicroserviceSubcategoriesApplication" />
@@ -315,7 +298,10 @@
       <workItem from="1730927178960" duration="908000" />
       <workItem from="1731000350289" duration="1580000" />
       <workItem from="1731417734226" duration="12574000" />
-      <workItem from="1731503858351" duration="8861000" />
+      <workItem from="1731503858351" duration="9525000" />
+      <workItem from="1731590388912" duration="1162000" />
+      <workItem from="1731682353927" duration="5537000" />
+      <workItem from="1731937536537" duration="8488000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

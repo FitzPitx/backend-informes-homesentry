@@ -1,0 +1,20 @@
+package com.microservice.acumulado.microservice_acumulado.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ResumenCategoriaMesDTO {
+    private Integer codigoCategoria;
+    private String nombreCategoria;
+    private Integer mes;
+    private Long totalCantidad;
+    private Double totalValor;
+    private Double totalValorIva;
+    private Double totalCosto;
+}

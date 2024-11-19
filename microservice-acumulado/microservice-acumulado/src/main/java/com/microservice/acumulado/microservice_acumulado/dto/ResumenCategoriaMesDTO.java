@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class ResumenCategoriaMesDTO {
     private Integer codigoCategoria;
     private String nombreCategoria;
-    private Integer mes;
+    private String nombreMes;
     private Long totalCantidad;
     private Double totalValor;
     private Double totalValorIva;

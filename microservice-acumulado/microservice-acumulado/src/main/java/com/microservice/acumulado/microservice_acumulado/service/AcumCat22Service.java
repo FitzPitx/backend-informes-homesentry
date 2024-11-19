@@ -91,7 +91,7 @@ public class AcumCat22Service {
             ResumenCategoriaMesDTO dto = new ResumenCategoriaMesDTO();
             dto.setCodigoCategoria((Integer) result[0]);
             dto.setNombreCategoria((String) result[1]);
-            dto.setMes((Integer) result[2]);
+            dto.setNombreMes((String) result[2]);
             dto.setTotalCantidad(((Number) result[3]).longValue());
             dto.setTotalValor(((Number) result[4]).doubleValue());
             dto.setTotalValorIva(((Number) result[5]).doubleValue());

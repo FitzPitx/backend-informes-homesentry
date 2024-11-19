@@ -18583,8 +18583,8 @@ varchar</ExtendedProperties>
     </schema>
     <schema id="5937" parent="5521" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-11-13.04:48:18.800</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2024-11-13.14:48:18</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2024-11-19.06:56:41.207</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-11-19.16:56:41</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="5938" parent="5521" name="guest">
@@ -18746,209 +18746,230 @@ int</ExtendedProperties>
       <ObjectId>1026102696</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5958" parent="5937" name="acum_cat_22">
+    <table id="5958" parent="5937" name="Meses">
+      <CreatedTimestamp>2024-11-19.06:43:25.380</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2024-11-19.06:43:25.380</ModifiedTimestamp>
+      <ObjectId>1621580815</ObjectId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <table id="5959" parent="5937" name="acum_cat_22">
       <CreatedTimestamp>2024-11-12.05:54:45.357</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-11-12.05:55:45.787</ModifiedTimestamp>
       <ObjectId>1397580017</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5959" parent="5937" name="acum_cat_23">
+    <table id="5960" parent="5937" name="acum_cat_23">
       <CreatedTimestamp>2024-11-12.05:56:09.207</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-11-12.05:56:45.193</ModifiedTimestamp>
       <ObjectId>1429580131</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5960" parent="5937" name="acum_cat_24">
+    <table id="5961" parent="5937" name="acum_cat_24">
       <CreatedTimestamp>2024-11-12.05:57:16.463</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-11-12.05:57:56.230</ModifiedTimestamp>
       <ObjectId>1461580245</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <argument id="5961" parent="5940">
+    <table id="5962" parent="5937" name="categorias">
+      <CreatedTimestamp>2024-11-18.04:20:28.613</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2024-11-18.04:20:28.613</ModifiedTimestamp>
+      <ObjectId>1589580701</ObjectId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <table id="5963" parent="5937" name="sucursales">
+      <CreatedTimestamp>2024-11-18.04:20:04.780</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2024-11-18.04:20:04.780</ModifiedTimestamp>
+      <ObjectId>1557580587</ObjectId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <argument id="5964" parent="5940">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5962" parent="5941" name="@diagramname">
+    <argument id="5965" parent="5941" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5963" parent="5941" name="@owner_id">
+    <argument id="5966" parent="5941" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5964" parent="5941" name="@version">
+    <argument id="5967" parent="5941" name="@version">
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5965" parent="5941" name="@definition">
+    <argument id="5968" parent="5941" name="@definition">
       <Position>4</Position>
       <StoredType>varbinary(max)|0s</StoredType>
     </argument>
-    <argument id="5966" parent="5942" name="@diagramname">
+    <argument id="5969" parent="5942" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5967" parent="5942" name="@owner_id">
+    <argument id="5970" parent="5942" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5968" parent="5942" name="@version">
+    <argument id="5971" parent="5942" name="@version">
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5969" parent="5942" name="@definition">
+    <argument id="5972" parent="5942" name="@definition">
       <Position>4</Position>
       <StoredType>varbinary(max)|0s</StoredType>
     </argument>
-    <argument id="5970" parent="5943" name="@diagramname">
+    <argument id="5973" parent="5943" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5971" parent="5943" name="@owner_id">
+    <argument id="5974" parent="5943" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5972" parent="5944" name="@diagramname">
+    <argument id="5975" parent="5944" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5973" parent="5944" name="@owner_id">
+    <argument id="5976" parent="5944" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5974" parent="5945" name="@diagramname">
+    <argument id="5977" parent="5945" name="@diagramname">
       <DefaultExpression>NULL</DefaultExpression>
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5975" parent="5945" name="@owner_id">
+    <argument id="5978" parent="5945" name="@owner_id">
       <DefaultExpression>NULL</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5976" parent="5946" name="@diagramname">
+    <argument id="5979" parent="5946" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5977" parent="5946" name="@owner_id">
+    <argument id="5980" parent="5946" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5978" parent="5946" name="@new_diagramname">
+    <argument id="5981" parent="5946" name="@new_diagramname">
       <Position>3</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <column id="5979" parent="5948" name="COD_CEG">
+    <column id="5982" parent="5948" name="COD_CEG">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5980" parent="5948" name="NOMCAT_CEG">
+    <column id="5983" parent="5948" name="NOMCAT_CEG">
       <Position>2</Position>
       <StoredType>varchar(28 char)|0s</StoredType>
     </column>
-    <column id="5981" parent="5948" name="ESTADO_CEG">
+    <column id="5984" parent="5948" name="ESTADO_CEG">
       <Position>3</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="5982" parent="5948" name="JEFCOM_CEG">
+    <column id="5985" parent="5948" name="JEFCOM_CEG">
       <Position>4</Position>
       <StoredType>varchar(6 char)|0s</StoredType>
     </column>
-    <column id="5983" parent="5948" name="usuario_creo">
+    <column id="5986" parent="5948" name="usuario_creo">
       <Position>5</Position>
       <StoredType>varchar(10 char)|0s</StoredType>
     </column>
-    <column id="5984" parent="5948" name="fecha_creacion">
+    <column id="5987" parent="5948" name="fecha_creacion">
       <Position>6</Position>
       <StoredType>varchar(12 char)|0s</StoredType>
     </column>
-    <column id="5985" parent="5948" name="CODSGE_CEG">
+    <column id="5988" parent="5948" name="CODSGE_CEG">
       <Position>7</Position>
       <StoredType>varchar(4 char)|0s</StoredType>
     </column>
-    <column id="5986" parent="5948" name="CODROL_CEG">
+    <column id="5989" parent="5948" name="CODROL_CEG">
       <Position>8</Position>
       <StoredType>varchar(4 char)|0s</StoredType>
     </column>
-    <column id="5987" parent="5948" name="EXCLUIDO_CEG">
+    <column id="5990" parent="5948" name="EXCLUIDO_CEG">
       <Position>9</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <index id="5988" parent="5948" name="PK_categoria">
+    <index id="5991" parent="5948" name="PK_categoria">
       <Clustering>1</Clustering>
       <ColNames>COD_CEG</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5989" parent="5948" name="PK_categoria">
+    <key id="5992" parent="5948" name="PK_categoria">
       <CreatedTimestamp>2024-10-07.11:29:09.980</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-07.11:29:09.980</ModifiedTimestamp>
       <ObjectId>1637580872</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_categoria</UnderlyingIndexName>
     </key>
-    <column id="5990" parent="5949" name="CODLIN_LEA">
+    <column id="5993" parent="5949" name="CODLIN_LEA">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="5991" parent="5949" name="CODSUB_LEA">
+    <column id="5994" parent="5949" name="CODSUB_LEA">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="5992" parent="5949" name="CODCAT_LEA">
+    <column id="5995" parent="5949" name="CODCAT_LEA">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="5993" parent="5949" name="NOMLINEA_LEA">
+    <column id="5996" parent="5949" name="NOMLINEA_LEA">
       <Position>4</Position>
       <StoredType>varchar(100 char)|0s</StoredType>
     </column>
-    <column id="5994" parent="5949" name="ESTADO_LEA">
+    <column id="5997" parent="5949" name="ESTADO_LEA">
       <Position>5</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="5995" parent="5949" name="CCOSTO_LEA">
+    <column id="5998" parent="5949" name="CCOSTO_LEA">
       <Position>6</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="5996" parent="5949" name="MARNAL_LEA">
+    <column id="5999" parent="5949" name="MARNAL_LEA">
       <Position>7</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="5997" parent="5949" name="MARIMP_LEA">
+    <column id="6000" parent="5949" name="MARIMP_LEA">
       <Position>8</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="5998" parent="5949" name="MAXMEC_LEA">
+    <column id="6001" parent="5949" name="MAXMEC_LEA">
       <Position>9</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="5999" parent="5949" name="MAXPRO_LEA">
+    <column id="6002" parent="5949" name="MAXPRO_LEA">
       <Position>10</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="6000" parent="5949" name="usuario_creo">
+    <column id="6003" parent="5949" name="usuario_creo">
       <Position>11</Position>
       <StoredType>varchar(50 char)|0s</StoredType>
     </column>
-    <column id="6001" parent="5949" name="fecha_creacion">
+    <column id="6004" parent="5949" name="fecha_creacion">
       <Position>12</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <index id="6002" parent="5949" name="PK_lineas">
+    <index id="6005" parent="5949" name="PK_lineas">
       <Clustering>1</Clustering>
       <ColNames>CODLIN_LEA
 CODSUB_LEA
@@ -18957,40 +18978,40 @@ CODCAT_LEA</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6003" parent="5949" name="PK_lineas">
+    <key id="6006" parent="5949" name="PK_lineas">
       <CreatedTimestamp>2024-10-08.03:45:08.863</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-08.03:45:08.863</ModifiedTimestamp>
       <ObjectId>1781581385</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_lineas</UnderlyingIndexName>
     </key>
-    <column id="6004" parent="5950" name="CODCAT_SCE">
+    <column id="6007" parent="5950" name="CODCAT_SCE">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6005" parent="5950" name="CODSUB_SCE">
+    <column id="6008" parent="5950" name="CODSUB_SCE">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6006" parent="5950" name="NOMSUBCAT_SCE">
+    <column id="6009" parent="5950" name="NOMSUBCAT_SCE">
       <Position>3</Position>
       <StoredType>varchar(100 char)|0s</StoredType>
     </column>
-    <column id="6007" parent="5950" name="ESTADO_SCE">
+    <column id="6010" parent="5950" name="ESTADO_SCE">
       <Position>4</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6008" parent="5950" name="usuario_creo">
+    <column id="6011" parent="5950" name="usuario_creo">
       <Position>5</Position>
       <StoredType>varchar(12 char)|0s</StoredType>
     </column>
-    <column id="6009" parent="5950" name="fecha_creacion">
+    <column id="6012" parent="5950" name="fecha_creacion">
       <Position>6</Position>
       <StoredType>varchar(21 char)|0s</StoredType>
     </column>
-    <index id="6010" parent="5950" name="PK_subcategorias">
+    <index id="6013" parent="5950" name="PK_subcategorias">
       <Clustering>1</Clustering>
       <ColNames>CODCAT_SCE
 CODSUB_SCE</ColNames>
@@ -18998,159 +19019,159 @@ CODSUB_SCE</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6011" parent="5950" name="PK_subcategorias">
+    <key id="6014" parent="5950" name="PK_subcategorias">
       <CreatedTimestamp>2024-10-07.11:36:27.170</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-07.11:36:27.170</ModifiedTimestamp>
       <ObjectId>1701581100</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_subcategorias</UnderlyingIndexName>
     </key>
-    <column id="6012" parent="5951" name="CODSUC_SUC">
+    <column id="6015" parent="5951" name="CODSUC_SUC">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6013" parent="5951" name="DESSUC_SUC">
+    <column id="6016" parent="5951" name="DESSUC_SUC">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(100 char)|0s</StoredType>
     </column>
-    <column id="6014" parent="5951" name="CODACT_SUC">
+    <column id="6017" parent="5951" name="CODACT_SUC">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6015" parent="5951" name="TIPSUC_SUC">
+    <column id="6018" parent="5951" name="TIPSUC_SUC">
       <Position>4</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6016" parent="5951" name="CODARQ_SUC">
+    <column id="6019" parent="5951" name="CODARQ_SUC">
       <Position>5</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6017" parent="5951" name="NMIPSO_SUC">
+    <column id="6020" parent="5951" name="NMIPSO_SUC">
       <Position>6</Position>
       <StoredType>varchar(10 char)|0s</StoredType>
     </column>
-    <column id="6018" parent="5951" name="NUMPIS_SUC">
+    <column id="6021" parent="5951" name="NUMPIS_SUC">
       <Position>7</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6019" parent="5951" name="FECAPE_SUC">
+    <column id="6022" parent="5951" name="FECAPE_SUC">
       <Position>8</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="6020" parent="5951" name="INDCRO_SUC">
+    <column id="6023" parent="5951" name="INDCRO_SUC">
       <Position>9</Position>
       <StoredType>varchar(1 char)|0s</StoredType>
     </column>
-    <column id="6021" parent="5951" name="ESTADO_SUC">
+    <column id="6024" parent="5951" name="ESTADO_SUC">
       <Position>10</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6022" parent="5951" name="CENOPE_SUC">
+    <column id="6025" parent="5951" name="CENOPE_SUC">
       <Position>11</Position>
       <StoredType>varchar(50 char)|0s</StoredType>
     </column>
-    <column id="6023" parent="5951" name="PREFIJ_SUC">
+    <column id="6026" parent="5951" name="PREFIJ_SUC">
       <Position>12</Position>
       <StoredType>varchar(4 char)|0s</StoredType>
     </column>
-    <column id="6024" parent="5951" name="CODCIU_SUC">
+    <column id="6027" parent="5951" name="CODCIU_SUC">
       <Position>13</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6025" parent="5951" name="USUCRE_SUC">
+    <column id="6028" parent="5951" name="USUCRE_SUC">
       <Position>14</Position>
       <StoredType>varchar(50 char)|0s</StoredType>
     </column>
-    <column id="6026" parent="5951" name="FECCRE_SUC">
+    <column id="6029" parent="5951" name="FECCRE_SUC">
       <Position>15</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="6027" parent="5951" name="TIPCOB_SUC">
+    <column id="6030" parent="5951" name="TIPCOB_SUC">
       <Position>16</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6028" parent="5951" name="EOCWMS_SUC">
+    <column id="6031" parent="5951" name="EOCWMS_SUC">
       <Position>17</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6029" parent="5951" name="EPEWMS_SUC">
+    <column id="6032" parent="5951" name="EPEWMS_SUC">
       <Position>18</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6030" parent="5951" name="ORDIMP_SUC">
+    <column id="6033" parent="5951" name="ORDIMP_SUC">
       <Position>19</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6031" parent="5951" name="ORDNAC_SUC">
+    <column id="6034" parent="5951" name="ORDNAC_SUC">
       <Position>20</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6032" parent="5951" name="DISIMP_SUC">
+    <column id="6035" parent="5951" name="DISIMP_SUC">
       <Position>21</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6033" parent="5951" name="DISNAC_SUC">
+    <column id="6036" parent="5951" name="DISNAC_SUC">
       <Position>22</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6034" parent="5951" name="TIPNEG_SUC">
+    <column id="6037" parent="5951" name="TIPNEG_SUC">
       <Position>23</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6035" parent="5951" name="TIERAP_SUC">
+    <column id="6038" parent="5951" name="TIERAP_SUC">
       <Position>24</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6036" parent="5951" name="ETRWMS_SUC">
+    <column id="6039" parent="5951" name="ETRWMS_SUC">
       <Position>25</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6037" parent="5951" name="METROS_SUC">
+    <column id="6040" parent="5951" name="METROS_SUC">
       <Position>26</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <index id="6038" parent="5951" name="PK_sucursales">
+    <index id="6041" parent="5951" name="PK_sucursales">
       <Clustering>1</Clustering>
       <ColNames>CODSUC_SUC</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6039" parent="5951" name="PK_sucursales">
+    <key id="6042" parent="5951" name="PK_sucursales">
       <CreatedTimestamp>2024-10-08.04:46:21.640</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-08.04:46:21.640</ModifiedTimestamp>
       <ObjectId>1973582069</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_sucursales</UnderlyingIndexName>
     </key>
-    <column id="6040" parent="5952" name="name">
+    <column id="6043" parent="5952" name="name">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </column>
-    <column id="6041" parent="5952" name="principal_id">
+    <column id="6044" parent="5952" name="principal_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6042" parent="5952" name="diagram_id">
+    <column id="6045" parent="5952" name="diagram_id">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6043" parent="5952" name="version">
+    <column id="6046" parent="5952" name="version">
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6044" parent="5952" name="definition">
+    <column id="6047" parent="5952" name="definition">
       <Position>5</Position>
       <StoredType>varbinary(max)|0s</StoredType>
     </column>
-    <index id="6045" parent="5952" name="PK__sysdiagr__C2B05B61133D87F4">
+    <index id="6048" parent="5952" name="PK__sysdiagr__C2B05B61133D87F4">
       <Clustering>1</Clustering>
       <ColNames>diagram_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -19158,14 +19179,14 @@ CODSUB_SCE</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="6046" parent="5952" name="UK_principal_name">
+    <index id="6049" parent="5952" name="UK_principal_name">
       <ColNames>principal_id
 name</ColNames>
       <Position>2</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6047" parent="5952" name="PK__sysdiagr__C2B05B61133D87F4">
+    <key id="6050" parent="5952" name="PK__sysdiagr__C2B05B61133D87F4">
       <CreatedTimestamp>2024-10-04.06:02:06.233</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-04.06:02:06.233</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -19173,64 +19194,64 @@ name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__sysdiagr__C2B05B61133D87F4</UnderlyingIndexName>
     </key>
-    <key id="6048" parent="5952" name="UK_principal_name">
+    <key id="6051" parent="5952" name="UK_principal_name">
       <CreatedTimestamp>2024-10-04.06:02:06.233</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-04.06:02:06.233</ModifiedTimestamp>
       <ObjectId>1029578706</ObjectId>
       <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
     </key>
-    <column id="6049" parent="5953" name="CODLIN_LEA">
+    <column id="6052" parent="5953" name="CODLIN_LEA">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6050" parent="5953" name="CODSUB_LEA">
+    <column id="6053" parent="5953" name="CODSUB_LEA">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6051" parent="5953" name="CODCAT_LEA">
+    <column id="6054" parent="5953" name="CODCAT_LEA">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6052" parent="5953" name="NOMLINEA_LEA">
+    <column id="6055" parent="5953" name="NOMLINEA_LEA">
       <Position>4</Position>
       <StoredType>varchar(100 char)|0s</StoredType>
     </column>
-    <column id="6053" parent="5953" name="ESTADO_LEA">
+    <column id="6056" parent="5953" name="ESTADO_LEA">
       <Position>5</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6054" parent="5953" name="CCOSTO_LEA">
+    <column id="6057" parent="5953" name="CCOSTO_LEA">
       <Position>6</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6055" parent="5953" name="MARNAL_LEA">
+    <column id="6058" parent="5953" name="MARNAL_LEA">
       <Position>7</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="6056" parent="5953" name="MARIMP_LEA">
+    <column id="6059" parent="5953" name="MARIMP_LEA">
       <Position>8</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="6057" parent="5953" name="MAXMEC_LEA">
+    <column id="6060" parent="5953" name="MAXMEC_LEA">
       <Position>9</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="6058" parent="5953" name="MAXPRO_LEA">
+    <column id="6061" parent="5953" name="MAXPRO_LEA">
       <Position>10</Position>
       <StoredType>real|0s</StoredType>
     </column>
-    <column id="6059" parent="5953" name="usuario_creo">
+    <column id="6062" parent="5953" name="usuario_creo">
       <Position>11</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6060" parent="5953" name="fecha_creacion">
+    <column id="6063" parent="5953" name="fecha_creacion">
       <Position>12</Position>
       <StoredType>datetimeoffset(6 digit)|0s</StoredType>
     </column>
-    <index id="6061" parent="5953" name="PK_linea">
+    <index id="6064" parent="5953" name="PK_linea">
       <Clustering>1</Clustering>
       <ColNames>CODLIN_LEA
 CODSUB_LEA
@@ -19239,43 +19260,43 @@ CODCAT_LEA</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6062" parent="5953" name="PK_linea">
+    <key id="6065" parent="5953" name="PK_linea">
       <CreatedTimestamp>2024-10-11.08:56:16.297</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-11.08:56:16.297</ModifiedTimestamp>
       <ObjectId>949578421</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_linea</UnderlyingIndexName>
     </key>
-    <column id="6063" parent="5954" name="id_categoria">
+    <column id="6066" parent="5954" name="id_categoria">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6064" parent="5954" name="id_subcategoria">
+    <column id="6067" parent="5954" name="id_subcategoria">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6065" parent="5954" name="descripcion">
+    <column id="6068" parent="5954" name="descripcion">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6066" parent="5954" name="estado">
+    <column id="6069" parent="5954" name="estado">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6067" parent="5954" name="usuario_creo">
+    <column id="6070" parent="5954" name="usuario_creo">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6068" parent="5954" name="fecha_creacion">
+    <column id="6071" parent="5954" name="fecha_creacion">
       <Position>6</Position>
       <StoredType>datetimeoffset(6 digit)|0s</StoredType>
     </column>
-    <index id="6069" parent="5954" name="PK_subcategorias">
+    <index id="6072" parent="5954" name="PK_subcategorias">
       <Clustering>1</Clustering>
       <ColNames>id_categoria
 id_subcategoria</ColNames>
@@ -19283,499 +19304,499 @@ id_subcategoria</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6070" parent="5954" name="PK_subcategorias">
+    <key id="6073" parent="5954" name="PK_subcategorias">
       <CreatedTimestamp>2024-10-17.04:13:25.130</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-17.04:13:25.130</ModifiedTimestamp>
       <ObjectId>1493580359</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_subcategorias</UnderlyingIndexName>
     </key>
-    <column id="6071" parent="5955" name="CODSUC_SUC">
+    <column id="6074" parent="5955" name="CODSUC_SUC">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6072" parent="5955" name="DESSUC_SUC">
+    <column id="6075" parent="5955" name="DESSUC_SUC">
       <Position>2</Position>
       <StoredType>varchar(100 char)|0s</StoredType>
     </column>
-    <column id="6073" parent="5955" name="CODACT_SUC">
+    <column id="6076" parent="5955" name="CODACT_SUC">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6074" parent="5955" name="TIPSUC_SUC">
+    <column id="6077" parent="5955" name="TIPSUC_SUC">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6075" parent="5955" name="CODARQ_SUC">
+    <column id="6078" parent="5955" name="CODARQ_SUC">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6076" parent="5955" name="NMIPSO_SUC">
+    <column id="6079" parent="5955" name="NMIPSO_SUC">
       <Position>6</Position>
       <StoredType>varchar(10 char)|0s</StoredType>
     </column>
-    <column id="6077" parent="5955" name="NUMPIS_SUC">
+    <column id="6080" parent="5955" name="NUMPIS_SUC">
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6078" parent="5955" name="FECAPE_SUC">
+    <column id="6081" parent="5955" name="FECAPE_SUC">
       <Position>8</Position>
       <StoredType>datetimeoffset(6 digit)|0s</StoredType>
     </column>
-    <column id="6079" parent="5955" name="INDCRO_SUC">
+    <column id="6082" parent="5955" name="INDCRO_SUC">
       <Position>9</Position>
       <StoredType>varchar(1 char)|0s</StoredType>
     </column>
-    <column id="6080" parent="5955" name="ESTADO_SUC">
+    <column id="6083" parent="5955" name="ESTADO_SUC">
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6081" parent="5955" name="CENOPE_SUC">
+    <column id="6084" parent="5955" name="CENOPE_SUC">
       <NotNull>1</NotNull>
       <Position>11</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6082" parent="5955" name="PREFIJ_SUC">
+    <column id="6085" parent="5955" name="PREFIJ_SUC">
       <Position>12</Position>
       <StoredType>varchar(4 char)|0s</StoredType>
     </column>
-    <column id="6083" parent="5955" name="CODCIU_SUC">
+    <column id="6086" parent="5955" name="CODCIU_SUC">
       <NotNull>1</NotNull>
       <Position>13</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6084" parent="5955" name="USUCRE_SUC">
+    <column id="6087" parent="5955" name="USUCRE_SUC">
       <Position>14</Position>
       <StoredType>varchar(50 char)|0s</StoredType>
     </column>
-    <column id="6085" parent="5955" name="FECCRE_SUC">
+    <column id="6088" parent="5955" name="FECCRE_SUC">
       <Position>15</Position>
       <StoredType>datetimeoffset(6 digit)|0s</StoredType>
     </column>
-    <column id="6086" parent="5955" name="TIPCOB_SUC">
+    <column id="6089" parent="5955" name="TIPCOB_SUC">
       <NotNull>1</NotNull>
       <Position>16</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6087" parent="5955" name="EOCWMS_SUC">
+    <column id="6090" parent="5955" name="EOCWMS_SUC">
       <Position>17</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6088" parent="5955" name="EPEWMS_SUC">
+    <column id="6091" parent="5955" name="EPEWMS_SUC">
       <Position>18</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6089" parent="5955" name="ORDIMP_SUC">
+    <column id="6092" parent="5955" name="ORDIMP_SUC">
       <Position>19</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6090" parent="5955" name="ORDNAC_SUC">
+    <column id="6093" parent="5955" name="ORDNAC_SUC">
       <Position>20</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6091" parent="5955" name="DISIMP_SUC">
+    <column id="6094" parent="5955" name="DISIMP_SUC">
       <Position>21</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6092" parent="5955" name="DISNAC_SUC">
+    <column id="6095" parent="5955" name="DISNAC_SUC">
       <Position>22</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6093" parent="5955" name="TIPNEG_SUC">
+    <column id="6096" parent="5955" name="TIPNEG_SUC">
       <NotNull>1</NotNull>
       <Position>23</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6094" parent="5955" name="TIERAP_SUC">
+    <column id="6097" parent="5955" name="TIERAP_SUC">
       <Position>24</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6095" parent="5955" name="ETRWMS_SUC">
+    <column id="6098" parent="5955" name="ETRWMS_SUC">
       <Position>25</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6096" parent="5955" name="METROS_SUC">
+    <column id="6099" parent="5955" name="METROS_SUC">
       <NotNull>1</NotNull>
       <Position>26</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <index id="6097" parent="5955" name="PK_subcategoria">
+    <index id="6100" parent="5955" name="PK_subcategoria">
       <Clustering>1</Clustering>
       <ColNames>CODSUC_SUC</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6098" parent="5955" name="PK_subcategoria">
+    <key id="6101" parent="5955" name="PK_subcategoria">
       <CreatedTimestamp>2024-10-11.08:59:17.133</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-11.08:59:17.133</ModifiedTimestamp>
       <ObjectId>917578307</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_subcategoria</UnderlyingIndexName>
     </key>
-    <column id="6099" parent="5956" name="COD_CEG">
+    <column id="6102" parent="5956" name="COD_CEG">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6100" parent="5956" name="NOMCAT_CEG">
+    <column id="6103" parent="5956" name="NOMCAT_CEG">
       <Position>2</Position>
       <StoredType>varchar(28 char)|0s</StoredType>
     </column>
-    <column id="6101" parent="5956" name="ESTADO_CEG">
+    <column id="6104" parent="5956" name="ESTADO_CEG">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6102" parent="5956" name="JEFCOM_CEG">
+    <column id="6105" parent="5956" name="JEFCOM_CEG">
       <Position>4</Position>
       <StoredType>varchar(6 char)|0s</StoredType>
     </column>
-    <column id="6103" parent="5956" name="usuario_creo">
+    <column id="6106" parent="5956" name="usuario_creo">
       <Position>5</Position>
       <StoredType>varchar(10 char)|0s</StoredType>
     </column>
-    <column id="6104" parent="5956" name="fecha_creacion">
+    <column id="6107" parent="5956" name="fecha_creacion">
       <Position>6</Position>
       <StoredType>varchar(12 char)|0s</StoredType>
     </column>
-    <column id="6105" parent="5956" name="CODSGE_CEG">
+    <column id="6108" parent="5956" name="CODSGE_CEG">
       <Position>7</Position>
       <StoredType>varchar(4 char)|0s</StoredType>
     </column>
-    <column id="6106" parent="5956" name="CODROL_CEG">
+    <column id="6109" parent="5956" name="CODROL_CEG">
       <Position>8</Position>
       <StoredType>varchar(4 char)|0s</StoredType>
     </column>
-    <column id="6107" parent="5956" name="EXCLUIDO_CEG">
+    <column id="6110" parent="5956" name="EXCLUIDO_CEG">
       <Position>9</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <index id="6108" parent="5956" name="PK_categorias">
+    <index id="6111" parent="5956" name="PK_categorias">
       <Clustering>1</Clustering>
       <ColNames>COD_CEG</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6109" parent="5956" name="PK_categorias">
+    <key id="6112" parent="5956" name="PK_categorias">
       <CreatedTimestamp>2024-10-16.11:22:36.700</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-16.11:22:36.700</ModifiedTimestamp>
       <ObjectId>1141579105</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_categorias</UnderlyingIndexName>
     </key>
-    <column id="6110" parent="5957" name="CATEGORIA_MRI">
+    <column id="6113" parent="5957" name="CATEGORIA_MRI">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="6111" parent="5957" name="SUBCATEGORIA_MRI">
+    <column id="6114" parent="5957" name="SUBCATEGORIA_MRI">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="6112" parent="5957" name="LINEA_MRI">
+    <column id="6115" parent="5957" name="LINEA_MRI">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="6113" parent="5957" name="COD_MRI">
+    <column id="6116" parent="5957" name="COD_MRI">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6114" parent="5957" name="DESCOD_MRI">
+    <column id="6117" parent="5957" name="DESCOD_MRI">
       <Position>5</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6115" parent="5957" name="REFP1_MRI">
+    <column id="6118" parent="5957" name="REFP1_MRI">
       <Position>6</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6116" parent="5957" name="REFP2_MRI">
+    <column id="6119" parent="5957" name="REFP2_MRI">
       <Position>7</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6117" parent="5957" name="DESADI_MRI">
+    <column id="6120" parent="5957" name="DESADI_MRI">
       <Position>8</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6118" parent="5957" name="UNI_MRI">
+    <column id="6121" parent="5957" name="UNI_MRI">
       <Position>9</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6119" parent="5957" name="COSTO_MRI">
+    <column id="6122" parent="5957" name="COSTO_MRI">
       <Position>10</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6120" parent="5957" name="DTOBAS_MRI">
+    <column id="6123" parent="5957" name="DTOBAS_MRI">
       <Position>11</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6121" parent="5957" name="PVTA_MRI">
+    <column id="6124" parent="5957" name="PVTA_MRI">
       <Position>12</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6122" parent="5957" name="PVTA1_MRI">
+    <column id="6125" parent="5957" name="PVTA1_MRI">
       <Position>13</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6123" parent="5957" name="PVTA2_MRI">
+    <column id="6126" parent="5957" name="PVTA2_MRI">
       <Position>14</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6124" parent="5957" name="IVA_MRI">
+    <column id="6127" parent="5957" name="IVA_MRI">
       <Position>15</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6125" parent="5957" name="IVACOM_MRI">
+    <column id="6128" parent="5957" name="IVACOM_MRI">
       <Position>16</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6126" parent="5957" name="COSDOL_MRI">
+    <column id="6129" parent="5957" name="COSDOL_MRI">
       <Position>17</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6127" parent="5957" name="TIPOPROD_MRI">
+    <column id="6130" parent="5957" name="TIPOPROD_MRI">
       <Position>18</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6128" parent="5957" name="ULTCOS_MRI">
+    <column id="6131" parent="5957" name="ULTCOS_MRI">
       <Position>19</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6129" parent="5957" name="EMPAQ_MRI">
+    <column id="6132" parent="5957" name="EMPAQ_MRI">
       <Position>20</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6130" parent="5957" name="PESO_MRI">
+    <column id="6133" parent="5957" name="PESO_MRI">
       <Position>21</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6131" parent="5957" name="ALTO_MRI">
+    <column id="6134" parent="5957" name="ALTO_MRI">
       <Position>22</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6132" parent="5957" name="ANCHO_MRI">
+    <column id="6135" parent="5957" name="ANCHO_MRI">
       <Position>23</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6133" parent="5957" name="LARGO_MRI">
+    <column id="6136" parent="5957" name="LARGO_MRI">
       <Position>24</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6134" parent="5957" name="ANOENT_MRI">
+    <column id="6137" parent="5957" name="ANOENT_MRI">
       <Position>25</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6135" parent="5957" name="MESENT_MRI">
+    <column id="6138" parent="5957" name="MESENT_MRI">
       <Position>26</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6136" parent="5957" name="DIAENT_MRI">
+    <column id="6139" parent="5957" name="DIAENT_MRI">
       <Position>27</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6137" parent="5957" name="CLAVE_MRI">
+    <column id="6140" parent="5957" name="CLAVE_MRI">
       <Position>28</Position>
       <StoredType>varchar(50 char)|0s</StoredType>
     </column>
-    <column id="6138" parent="5957" name="IDE1_MRI">
+    <column id="6141" parent="5957" name="IDE1_MRI">
       <Position>29</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6139" parent="5957" name="IDE2_MRI">
+    <column id="6142" parent="5957" name="IDE2_MRI">
       <Position>30</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6140" parent="5957" name="ENTGAN_MRI">
+    <column id="6143" parent="5957" name="ENTGAN_MRI">
       <Position>31</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6141" parent="5957" name="SEGURI_MRI">
+    <column id="6144" parent="5957" name="SEGURI_MRI">
       <Position>32</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6142" parent="5957" name="IDEREP_MRI">
+    <column id="6145" parent="5957" name="IDEREP_MRI">
       <Position>33</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6143" parent="5957" name="TICKET_MRI">
+    <column id="6146" parent="5957" name="TICKET_MRI">
       <Position>34</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6144" parent="5957" name="PLANCONMET_MRI">
+    <column id="6147" parent="5957" name="PLANCONMET_MRI">
       <Position>35</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6145" parent="5957" name="RIFA_MRI">
+    <column id="6148" parent="5957" name="RIFA_MRI">
       <Position>36</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="6146" parent="5957" name="SALDOIMPERFECTO_MRI">
+    <column id="6149" parent="5957" name="SALDOIMPERFECTO_MRI">
       <Position>37</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6147" parent="5957" name="UNIMEDIDA_MRI">
+    <column id="6150" parent="5957" name="UNIMEDIDA_MRI">
       <Position>38</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6148" parent="5957" name="VALCOMISION_MRI">
+    <column id="6151" parent="5957" name="VALCOMISION_MRI">
       <Position>39</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6149" parent="5957" name="EANCEN_MRI">
+    <column id="6152" parent="5957" name="EANCEN_MRI">
       <Position>40</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6150" parent="5957" name="COMBO_MRI">
+    <column id="6153" parent="5957" name="COMBO_MRI">
       <Position>41</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6151" parent="5957" name="UNIMASTER_MRI">
+    <column id="6154" parent="5957" name="UNIMASTER_MRI">
       <Position>42</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6152" parent="5957" name="INDCOD_MRI">
+    <column id="6155" parent="5957" name="INDCOD_MRI">
       <Position>43</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6153" parent="5957" name="TIPMED_MRI">
+    <column id="6156" parent="5957" name="TIPMED_MRI">
       <Position>44</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6154" parent="5957" name="INDLIQ_MRI">
+    <column id="6157" parent="5957" name="INDLIQ_MRI">
       <Position>45</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6155" parent="5957" name="ULTEXI_MRI">
+    <column id="6158" parent="5957" name="ULTEXI_MRI">
       <Position>46</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6156" parent="5957" name="UNICEDI_MRI">
+    <column id="6159" parent="5957" name="UNICEDI_MRI">
       <Position>47</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6157" parent="5957" name="PREORIG_MRI">
+    <column id="6160" parent="5957" name="PREORIG_MRI">
       <Position>48</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6158" parent="5957" name="PROVEED_MRI">
+    <column id="6161" parent="5957" name="PROVEED_MRI">
       <Position>49</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="6159" parent="5957" name="PROVOLUM_MRI">
+    <column id="6162" parent="5957" name="PROVOLUM_MRI">
       <Position>50</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6160" parent="5957" name="PAISORI_MRI">
+    <column id="6163" parent="5957" name="PAISORI_MRI">
       <Position>51</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6161" parent="5957" name="PAISCOM_MRI">
+    <column id="6164" parent="5957" name="PAISCOM_MRI">
       <Position>52</Position>
       <StoredType>smallint|0s</StoredType>
     </column>
-    <column id="6162" parent="5957" name="PROMOESP_MRI">
+    <column id="6165" parent="5957" name="PROMOESP_MRI">
       <Position>53</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6163" parent="5957" name="TIPMEDEMPAQ_MRI">
+    <column id="6166" parent="5957" name="TIPMEDEMPAQ_MRI">
       <Position>54</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6164" parent="5957" name="ALTOEMPAQ_MRI">
+    <column id="6167" parent="5957" name="ALTOEMPAQ_MRI">
       <Position>55</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6165" parent="5957" name="ANCHEMPAQ_MRI">
+    <column id="6168" parent="5957" name="ANCHEMPAQ_MRI">
       <Position>56</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6166" parent="5957" name="LARGEMPAQ_MRI">
+    <column id="6169" parent="5957" name="LARGEMPAQ_MRI">
       <Position>57</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6167" parent="5957" name="TIPMEDMASTER_MRI">
+    <column id="6170" parent="5957" name="TIPMEDMASTER_MRI">
       <Position>58</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6168" parent="5957" name="ALTOMASTER_MRI">
+    <column id="6171" parent="5957" name="ALTOMASTER_MRI">
       <Position>59</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6169" parent="5957" name="ANCHMASTER_MRI">
+    <column id="6172" parent="5957" name="ANCHMASTER_MRI">
       <Position>60</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6170" parent="5957" name="LARGMASTER_MRI">
+    <column id="6173" parent="5957" name="LARGMASTER_MRI">
       <Position>61</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6171" parent="5957" name="SUCPRO_MRI">
+    <column id="6174" parent="5957" name="SUCPRO_MRI">
       <Position>62</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6172" parent="5957" name="INDKARDEX_MRI">
+    <column id="6175" parent="5957" name="INDKARDEX_MRI">
       <Position>63</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6173" parent="5957" name="INANDOUT_MRI">
+    <column id="6176" parent="5957" name="INANDOUT_MRI">
       <Position>64</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6174" parent="5957" name="INDCOSTO_MRI">
+    <column id="6177" parent="5957" name="INDCOSTO_MRI">
       <Position>65</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6175" parent="5957" name="CODGRUPO_MRI">
+    <column id="6178" parent="5957" name="CODGRUPO_MRI">
       <Position>66</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6176" parent="5957" name="TIPOLO_MRI">
+    <column id="6179" parent="5957" name="TIPOLO_MRI">
       <Position>67</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6177" parent="5957" name="CUABAS_MRI">
+    <column id="6180" parent="5957" name="CUABAS_MRI">
       <Position>68</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6178" parent="5957" name="TIPMPROPIA_MRI">
+    <column id="6181" parent="5957" name="TIPMPROPIA_MRI">
       <Position>69</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6179" parent="5957" name="SUSPEND_MRI">
+    <column id="6182" parent="5957" name="SUSPEND_MRI">
       <Position>70</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6180" parent="5957" name="EXHIBI_MRI">
+    <column id="6183" parent="5957" name="EXHIBI_MRI">
       <Position>71</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6181" parent="5957" name="EXCLUIDO_MRI">
+    <column id="6184" parent="5957" name="EXCLUIDO_MRI">
       <Position>72</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6182" parent="5957" name="VLIMPCOMPRA_MRI">
+    <column id="6185" parent="5957" name="VLIMPCOMPRA_MRI">
       <Position>73</Position>
       <StoredType>tinyint|0s</StoredType>
     </column>
-    <column id="6183" parent="5957" name="TIPOPESO_MRI">
+    <column id="6186" parent="5957" name="TIPOPESO_MRI">
       <Position>74</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6184" parent="5957" name="PESOMED_MRI">
+    <column id="6187" parent="5957" name="PESOMED_MRI">
       <Position>75</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <index id="6185" parent="5957" name="PK_Referencias">
+    <index id="6188" parent="5957" name="PK_Referencias">
       <Clustering>1</Clustering>
       <ColNames>CATEGORIA_MRI
 SUBCATEGORIA_MRI
@@ -19785,73 +19806,98 @@ COD_MRI</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6186" parent="5957" name="PK_Referencias">
+    <key id="6189" parent="5957" name="PK_Referencias">
       <CreatedTimestamp>2024-10-18.09:13:58.370</CreatedTimestamp>
       <ModifiedTimestamp>2024-10-18.09:13:58.370</ModifiedTimestamp>
       <ObjectId>1074102867</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_Referencias</UnderlyingIndexName>
     </key>
-    <column id="6187" parent="5958" name="id_acum">
+    <column id="6190" parent="5958" name="Numero">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="6191" parent="5958" name="Nombre">
+      <Position>2</Position>
+      <StoredType>varchar(20 char)|0s</StoredType>
+    </column>
+    <index id="6192" parent="5958" name="PK__Meses__7E532BC7BB812238">
+      <Clustering>1</Clustering>
+      <ColNames>Numero</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="6193" parent="5958" name="PK__Meses__7E532BC7BB812238">
+      <CreatedTimestamp>2024-11-19.06:43:25.380</CreatedTimestamp>
+      <ModifiedTimestamp>2024-11-19.06:43:25.380</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1637580872</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__Meses__7E532BC7BB812238</UnderlyingIndexName>
+    </key>
+    <column id="6194" parent="5959" name="id_acum">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(154184)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6188" parent="5958" name="codigo">
+    <column id="6195" parent="5959" name="codigo">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6189" parent="5958" name="sucursal">
+    <column id="6196" parent="5959" name="sucursal">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6190" parent="5958" name="fecha_mes">
+    <column id="6197" parent="5959" name="fecha_mes">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6191" parent="5958" name="operacion_actividad">
+    <column id="6198" parent="5959" name="operacion_actividad">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6192" parent="5958" name="bodega_origen">
+    <column id="6199" parent="5959" name="bodega_origen">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6193" parent="5958" name="tipo_producto">
+    <column id="6200" parent="5959" name="tipo_producto">
       <Position>7</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6194" parent="5958" name="tipo_factura">
+    <column id="6201" parent="5959" name="tipo_factura">
       <Position>8</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6195" parent="5958" name="cantidad">
+    <column id="6202" parent="5959" name="cantidad">
       <NotNull>1</NotNull>
       <Position>9</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6196" parent="5958" name="valor">
+    <column id="6203" parent="5959" name="valor">
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6197" parent="5958" name="valor_iva">
+    <column id="6204" parent="5959" name="valor_iva">
       <NotNull>1</NotNull>
       <Position>11</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6198" parent="5958" name="costo">
+    <column id="6205" parent="5959" name="costo">
       <NotNull>1</NotNull>
       <Position>12</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <index id="6199" parent="5958" name="PK__acum_cat__B4720F34567665EA">
+    <index id="6206" parent="5959" name="PK__acum_cat__B4720F34567665EA">
       <Clustering>1</Clustering>
       <ColNames>id_acum</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -19859,7 +19905,7 @@ COD_MRI</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6200" parent="5958" name="PK__acum_cat__B4720F34567665EA">
+    <key id="6207" parent="5959" name="PK__acum_cat__B4720F34567665EA">
       <CreatedTimestamp>2024-11-12.05:54:45.357</CreatedTimestamp>
       <ModifiedTimestamp>2024-11-12.05:54:45.357</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -19867,66 +19913,66 @@ COD_MRI</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__acum_cat__B4720F34567665EA</UnderlyingIndexName>
     </key>
-    <column id="6201" parent="5959" name="id_acum">
+    <column id="6208" parent="5960" name="id_acum">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(157103)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6202" parent="5959" name="codigo">
+    <column id="6209" parent="5960" name="codigo">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6203" parent="5959" name="sucursal">
+    <column id="6210" parent="5960" name="sucursal">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6204" parent="5959" name="fecha_mes">
+    <column id="6211" parent="5960" name="fecha_mes">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6205" parent="5959" name="operacion_actividad">
+    <column id="6212" parent="5960" name="operacion_actividad">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6206" parent="5959" name="bodega_origen">
+    <column id="6213" parent="5960" name="bodega_origen">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6207" parent="5959" name="tipo_producto">
+    <column id="6214" parent="5960" name="tipo_producto">
       <Position>7</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6208" parent="5959" name="tipo_factura">
+    <column id="6215" parent="5960" name="tipo_factura">
       <Position>8</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6209" parent="5959" name="cantidad">
+    <column id="6216" parent="5960" name="cantidad">
       <NotNull>1</NotNull>
       <Position>9</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6210" parent="5959" name="valor">
+    <column id="6217" parent="5960" name="valor">
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6211" parent="5959" name="valor_iva">
+    <column id="6218" parent="5960" name="valor_iva">
       <NotNull>1</NotNull>
       <Position>11</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6212" parent="5959" name="costo">
+    <column id="6219" parent="5960" name="costo">
       <NotNull>1</NotNull>
       <Position>12</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <index id="6213" parent="5959" name="PK__acum_cat__B4720F3418674FA7">
+    <index id="6220" parent="5960" name="PK__acum_cat__B4720F3418674FA7">
       <Clustering>1</Clustering>
       <ColNames>id_acum</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -19934,7 +19980,7 @@ COD_MRI</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6214" parent="5959" name="PK__acum_cat__B4720F3418674FA7">
+    <key id="6221" parent="5960" name="PK__acum_cat__B4720F3418674FA7">
       <CreatedTimestamp>2024-11-12.05:56:09.207</CreatedTimestamp>
       <ModifiedTimestamp>2024-11-12.05:56:09.207</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -19942,66 +19988,66 @@ COD_MRI</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__acum_cat__B4720F3418674FA7</UnderlyingIndexName>
     </key>
-    <column id="6215" parent="5960" name="id_acum">
+    <column id="6222" parent="5961" name="id_acum">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(141223)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6216" parent="5960" name="codigo">
+    <column id="6223" parent="5961" name="codigo">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6217" parent="5960" name="sucursal">
+    <column id="6224" parent="5961" name="sucursal">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6218" parent="5960" name="fecha_mes">
+    <column id="6225" parent="5961" name="fecha_mes">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6219" parent="5960" name="operacion_actividad">
+    <column id="6226" parent="5961" name="operacion_actividad">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6220" parent="5960" name="bodega_origen">
+    <column id="6227" parent="5961" name="bodega_origen">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="6221" parent="5960" name="tipo_producto">
+    <column id="6228" parent="5961" name="tipo_producto">
       <Position>7</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6222" parent="5960" name="tipo_factura">
+    <column id="6229" parent="5961" name="tipo_factura">
       <Position>8</Position>
       <StoredType>nvarchar(50 char)|0s</StoredType>
     </column>
-    <column id="6223" parent="5960" name="cantidad">
+    <column id="6230" parent="5961" name="cantidad">
       <NotNull>1</NotNull>
       <Position>9</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6224" parent="5960" name="valor">
+    <column id="6231" parent="5961" name="valor">
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6225" parent="5960" name="valor_iva">
+    <column id="6232" parent="5961" name="valor_iva">
       <NotNull>1</NotNull>
       <Position>11</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <column id="6226" parent="5960" name="costo">
+    <column id="6233" parent="5961" name="costo">
       <NotNull>1</NotNull>
       <Position>12</Position>
       <StoredType>float|0s</StoredType>
     </column>
-    <index id="6227" parent="5960" name="PK__acum_cat__B4720F34917763C6">
+    <index id="6234" parent="5961" name="PK__acum_cat__B4720F34917763C6">
       <Clustering>1</Clustering>
       <ColNames>id_acum</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -20009,13 +20055,211 @@ COD_MRI</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="6228" parent="5960" name="PK__acum_cat__B4720F34917763C6">
+    <key id="6235" parent="5961" name="PK__acum_cat__B4720F34917763C6">
       <CreatedTimestamp>2024-11-12.05:57:16.463</CreatedTimestamp>
       <ModifiedTimestamp>2024-11-12.05:57:16.463</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>1477580302</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__acum_cat__B4720F34917763C6</UnderlyingIndexName>
+    </key>
+    <column id="6236" parent="5962" name="COD_CEG">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="6237" parent="5962" name="NOMCAT_CEG">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6238" parent="5962" name="ESTADO_CEG">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6239" parent="5962" name="JEFCOM_CEG">
+      <Position>4</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6240" parent="5962" name="usuario_creo">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6241" parent="5962" name="fecha_creacion">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>date|0s</StoredType>
+    </column>
+    <column id="6242" parent="5962" name="CODSGE_CEG">
+      <Position>7</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6243" parent="5962" name="CODROL_CEG">
+      <Position>8</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6244" parent="5962" name="EXCLUIDO_CEG">
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <index id="6245" parent="5962" name="PK_categorias">
+      <Clustering>1</Clustering>
+      <ColNames>COD_CEG</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="6246" parent="5962" name="PK_categorias">
+      <CreatedTimestamp>2024-11-18.04:20:28.613</CreatedTimestamp>
+      <ModifiedTimestamp>2024-11-18.04:20:28.613</ModifiedTimestamp>
+      <ObjectId>1605580758</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_categorias</UnderlyingIndexName>
+    </key>
+    <column id="6247" parent="5963" name="CODSUC_SUC">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="6248" parent="5963" name="DESSUC_SUC">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6249" parent="5963" name="CODACT_SUC">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6250" parent="5963" name="TIPSUC_SUC">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6251" parent="5963" name="CODARQ_SUC">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6252" parent="5963" name="NMIPSO_SUC">
+      <Position>6</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6253" parent="5963" name="NUMPIS_SUC">
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6254" parent="5963" name="FECAPE_SUC">
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6255" parent="5963" name="INDCRO_SUC">
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6256" parent="5963" name="ESTADO_SUC">
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6257" parent="5963" name="CENOPE_SUC">
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6258" parent="5963" name="PREFIJ_SUC">
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6259" parent="5963" name="CODCIU_SUC">
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="6260" parent="5963" name="USUCRE_SUC">
+      <Position>14</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="6261" parent="5963" name="FECCRE_SUC">
+      <NotNull>1</NotNull>
+      <Position>15</Position>
+      <StoredType>nvarchar(50 char)|0s</StoredType>
+    </column>
+    <column id="6262" parent="5963" name="TIPCOB_SUC">
+      <NotNull>1</NotNull>
+      <Position>16</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6263" parent="5963" name="EOCWMS_SUC">
+      <NotNull>1</NotNull>
+      <Position>17</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6264" parent="5963" name="EPEWMS_SUC">
+      <NotNull>1</NotNull>
+      <Position>18</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6265" parent="5963" name="ORDIMP_SUC">
+      <NotNull>1</NotNull>
+      <Position>19</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6266" parent="5963" name="ORDNAC_SUC">
+      <NotNull>1</NotNull>
+      <Position>20</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6267" parent="5963" name="DISIMP_SUC">
+      <NotNull>1</NotNull>
+      <Position>21</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6268" parent="5963" name="DISNAC_SUC">
+      <NotNull>1</NotNull>
+      <Position>22</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6269" parent="5963" name="TIPNEG_SUC">
+      <NotNull>1</NotNull>
+      <Position>23</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="6270" parent="5963" name="TIERAP_SUC">
+      <NotNull>1</NotNull>
+      <Position>24</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6271" parent="5963" name="ETRWMS_SUC">
+      <NotNull>1</NotNull>
+      <Position>25</Position>
+      <StoredType>bit|0s</StoredType>
+    </column>
+    <column id="6272" parent="5963" name="METROS_SUC">
+      <NotNull>1</NotNull>
+      <Position>26</Position>
+      <StoredType>smallint|0s</StoredType>
+    </column>
+    <index id="6273" parent="5963" name="PK_sucursales">
+      <Clustering>1</Clustering>
+      <ColNames>CODSUC_SUC</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="6274" parent="5963" name="PK_sucursales">
+      <CreatedTimestamp>2024-11-18.04:20:04.780</CreatedTimestamp>
+      <ModifiedTimestamp>2024-11-18.04:20:04.780</ModifiedTimestamp>
+      <ObjectId>1573580644</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_sucursales</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

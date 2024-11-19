@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Conexión exitosa a DB con Credenciales .env">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaMesDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenSucursalDTO.java" afterDir="false" />
+    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Nuevos Querys Agregados">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e58b16d-bbaa-4826-bc12-482de7d1d79d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7e58b16d-bbaa-4826-bc12-482de7d1d79d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/CategoriaController22.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/CategoriaController22.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/CategoriaSucursalResumen.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/CategoriaSucursalResumen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaMesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaMesDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AcumCat22Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AcumCat22Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AcumCat22Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AcumCat22Service.java" afterDir="false" />
     </list>
@@ -301,7 +298,7 @@
       <workItem from="1731503858351" duration="9525000" />
       <workItem from="1731590388912" duration="1162000" />
       <workItem from="1731682353927" duration="5537000" />
-      <workItem from="1731937536537" duration="8488000" />
+      <workItem from="1731937536537" duration="18319000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -343,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728416902700</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Nuevos Querys Agregados">
+      <option name="closed" value="true" />
+      <created>1731966581652</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731966581652</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +359,8 @@
     <MESSAGE value="build all microservices" />
     <MESSAGE value="Creación de paquetes para cada microservicio" />
     <MESSAGE value="Conexión exitosa a DB con Credenciales .env" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conexión exitosa a DB con Credenciales .env" />
+    <MESSAGE value="Nuevos Querys Agregados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevos Querys Agregados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,12 +6,11 @@ import com.microservice.acumulado.microservice_acumulado.dto.ResumenCategoriaMes
 import com.microservice.acumulado.microservice_acumulado.dto.ResumenSucursalDTO;
 import com.microservice.acumulado.microservice_acumulado.service.AcumCat22Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -44,8 +43,27 @@ public class CategoriaController22 {
 
     // Endpoint para el resumen por mes
     @GetMapping("/resumen-categorias-mes")
-    public List<ResumenCategoriaMesDTO> getResumenPorCategoriaConMes() {
-        return acumCat22Service.getResumenPorCategoriaConMes();
+    public Map<String, Object> getResumenPorCategoriaConMes(
+            @RequestParam(required = false) String search) {
+
+        // Obtiene todos los datos
+        List<ResumenCategoriaMesDTO> allData = acumCat22Service.getResumenPorCategoriaConMes();
+
+        // Aplica la lógica de búsqueda (si es necesario)
+        List<ResumenCategoriaMesDTO> filteredData = allData;
+        if (search != null && !search.isEmpty()) {
+            filteredData = allData.stream()
+                    .filter(dto -> dto.getNombreCategoria().toLowerCase().contains(search.toLowerCase()))
+                    .toList();
+        }
+
+        // Prepara la respuesta
+        Map<String, Object> response = new HashMap<>();
+        response.put("recordsFiltered", filteredData.size());
+        response.put("recordsTotal", allData.size());
+        response.put("data", filteredData); // Retorna todos los datos filtrados sin paginar
+
+        return response;
     }
 
 }

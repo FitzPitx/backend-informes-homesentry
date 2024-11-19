@@ -61,14 +61,15 @@ public interface AcumCat22Repository extends CrudRepository<AcumCat22, Integer> 
 
     @Query(value = "SELECT c.COD_CEG AS codigoCategoria, " +
             "c.NOMCAT_CEG AS nombreCategoria, " +
-            "a.fecha_mes AS mes, " +
+            "m.Nombre AS nombreMes, " +
             "SUM(a.cantidad) AS totalCantidad, " +
             "SUM(a.valor) AS totalValor, " +
             "SUM(a.valor_iva) AS totalValorIva, " +
             "SUM(a.costo) AS totalCosto " +
             "FROM acum_cat_22 a " +
             "INNER JOIN categorias c ON a.codigo = c.COD_CEG " +
-            "GROUP BY c.COD_CEG, c.NOMCAT_CEG, a.fecha_mes " +
-            "ORDER BY a.fecha_mes, c.COD_CEG", nativeQuery = true)
+            "INNER JOIN Meses m ON a.fecha_mes = m.Numero " +
+            "GROUP BY c.COD_CEG, c.NOMCAT_CEG, m.Nombre, m.Numero " +
+            "ORDER BY m.Numero, c.COD_CEG", nativeQuery = true)
     List<Object[]> findResumenPorCategoriaConMes();
 }

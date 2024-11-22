@@ -6,13 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class ResumenCategoriaMesDTO {
+public class SummaryCategoryDTO {
     private Integer codigoCategoria;
     private String nombreCategoria;
-    private String nombreMes;
     private Long totalCantidad;
     private Double totalValor;
     private Double totalValorIva;

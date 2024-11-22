@@ -26,7 +26,7 @@
         <module>microservice-references</module>
         <module>microservice-lines</module>
         <module>microservice-branches</module>
-        <module>microservice-acumulado/microservice-acumulado</module>
+        <module>microservice-acumulado</module>
     </modules>
     <properties>
         <maven.compiler.source>23</maven.compiler.source>

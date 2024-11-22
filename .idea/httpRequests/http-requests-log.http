@@ -1,3 +1,23 @@
+GET http://localhost:8080/api/acumulado/resumen-categorias
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-22T140826.404.json
+
+###
+
+GET http://localhost:8080/api/acumulado/resumen-categorias-mes-23?sucursal=16
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-22T135535.404.json
+
+###
+
 GET http://localhost:8095/api/categorias22/categorias-sucursal-resumen
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
 Accept-Encoding: br, deflate, gzip, x-gzip

@@ -55,14 +55,13 @@ public class AccumulatedCategoryController {
     }
 
     @GetMapping("/resumen-categorias-mensual")
-    public Map<String, Object> obtainSummaryByBranch(
+    public List<SummaryCategoryMonthlyDTO> obtainSummaryByBranch(
             @RequestParam(required = false) Integer sucursal,
-            @RequestParam Integer year,
-            @RequestParam(required = false) String search) {
+            @RequestParam Integer year) {
         // Llama al servicio para obtener los datos (ya filtrados por sucursal y año)
         List<Object[]> allData = accumulatedCategoryService.obtainSummaryByBranch(sucursal, year);
 
-        // Transforma los datos en DTOs para facilitar la manipulación
+        // Mapeamos los datos a nuestro DTO personalizado para una respuesta mas legible
         List<SummaryCategoryMonthlyDTO> transformedData = allData.stream().map(data -> {
             SummaryCategoryMonthlyDTO dto = new SummaryCategoryMonthlyDTO();
             dto.setCodigoCategoria((Integer) data[0]);
@@ -80,21 +79,7 @@ public class AccumulatedCategoryController {
             return dto;
         }).toList();
 
-        // Filtra los datos según el término de búsqueda
-        List<SummaryCategoryMonthlyDTO> filteredData = transformedData;
-        if (search != null && !search.isEmpty()) {
-            filteredData = transformedData.stream()
-                    .filter(dto -> dto.getNombreCategoria().toLowerCase().contains(search.toLowerCase()))
-                    .toList();
-        }
-
-        // Prepara la respuesta para el datatable
-        Map<String, Object> response = new HashMap<>();
-        response.put("recordsFiltered", filteredData.size());
-        response.put("recordsTotal", transformedData.size());
-        response.put("data", filteredData);
-
-        return response;
+        return transformedData;
     }
 
 }

@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Ajustes para consulta del datatable de resumenPorCategoriaConMes">
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryCategoryMonthlyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/entities/AcumCat23.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/entities/AcumCat24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/MicroserviceAcumuladoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/CategoriaController22.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/CategoriaSucursalResumen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenCategoriaMesDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/ResumenSucursalDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/entities/AcumCat22.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AcumCat22Repository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AcumCat22Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/main/resources/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/microservice-acumulado/src/test/java/com/microservice/acumulado/microservice_acumulado/MicroserviceAcumuladoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +320,9 @@
       <workItem from="1732210230539" duration="995000" />
       <workItem from="1732214540721" duration="649000" />
       <workItem from="1732216926281" duration="17340000" />
-      <workItem from="1732304478351" duration="6134000" />
+      <workItem from="1732304478351" duration="6233000" />
+      <workItem from="1732542558727" duration="3484000" />
+      <workItem from="1732554894355" duration="2748000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

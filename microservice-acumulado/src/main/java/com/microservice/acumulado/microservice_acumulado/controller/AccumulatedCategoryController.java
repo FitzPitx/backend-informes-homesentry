@@ -69,13 +69,15 @@ public class AccumulatedCategoryController {
             dto.setMes((String) data[2]);
             dto.setNombreSucursal((String) data[3]);
             dto.setVentaActual((Double) data[4]);
-            dto.setUtilidadActual((Double) data[5]);
-            dto.setMargenActual((Double) data[6]);
-            dto.setVentaAnterior((Double) data[7]);
-            dto.setUtilidadAnterior((Double) data[8]);
-            dto.setMargenAnterior((Double) data[9]);
-            dto.setDiferenciaVentas((Double) data[10]);
-            dto.setVariacionVentas((Double) data[11]);
+            dto.setCostoActual((Double) data[5]);
+            dto.setUtilidadActual((Double) data[6]);
+            dto.setMargenActual((Double) data[7]);
+            dto.setVentaAnterior((Double) data[8]);
+            dto.setCostoAnterior((Double) data[9]);
+            dto.setUtilidadAnterior((Double) data[10]);
+            dto.setMargenAnterior((Double) data[11]);
+            dto.setDiferenciaVentas((Double) data[12]);
+            dto.setVariacionVentas((Double) data[13]);
             return dto;
         }).toList();
 

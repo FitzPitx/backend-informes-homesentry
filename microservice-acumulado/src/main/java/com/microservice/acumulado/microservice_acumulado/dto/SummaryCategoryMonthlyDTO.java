@@ -13,15 +13,13 @@ public class SummaryCategoryMonthlyDTO {
     private Integer codigoCategoria;
     private String nombreCategoria;
     private String mes;
-    private String nombreSucursal;
     private Double ventaActual;
-    private Double costoActual;
     private Double utilidadActual;
     private Double margenActual;
     private Double ventaAnterior;
-    private Double costoAnterior;
     private Double utilidadAnterior;
     private Double margenAnterior;
     private Double diferenciaVentas;
+    private Double diferenciaUtilidad;
     private Double variacionVentas;
 }

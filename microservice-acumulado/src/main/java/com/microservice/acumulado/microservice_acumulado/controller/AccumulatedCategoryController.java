@@ -56,10 +56,10 @@ public class AccumulatedCategoryController {
 
     @GetMapping("/resumen-categorias-mensual")
     public List<SummaryCategoryMonthlyDTO> obtainSummaryByBranch(
-            @RequestParam(required = false) Integer sucursal,
-            @RequestParam Integer year) {
+            @RequestParam Integer year,
+            @RequestParam(required = false) Integer sucursal) {
         // Llama al servicio para obtener los datos (ya filtrados por sucursal y año)
-        List<Object[]> allData = accumulatedCategoryService.obtainSummaryByBranch(sucursal, year);
+        List<Object[]> allData = accumulatedCategoryService.obtainSummaryByBranch(year, sucursal);
 
         // Mapeamos los datos a nuestro DTO personalizado para una respuesta mas legible
         List<SummaryCategoryMonthlyDTO> transformedData = allData.stream().map(data -> {
@@ -67,17 +67,17 @@ public class AccumulatedCategoryController {
             dto.setCodigoCategoria((Integer) data[0]);
             dto.setNombreCategoria((String) data[1]);
             dto.setMes((String) data[2]);
-            dto.setNombreSucursal((String) data[3]);
-            dto.setVentaActual((Double) data[4]);
-            dto.setCostoActual((Double) data[5]);
-            dto.setUtilidadActual((Double) data[6]);
-            dto.setMargenActual((Double) data[7]);
-            dto.setVentaAnterior((Double) data[8]);
-            dto.setCostoAnterior((Double) data[9]);
-            dto.setUtilidadAnterior((Double) data[10]);
-            dto.setMargenAnterior((Double) data[11]);
-            dto.setDiferenciaVentas((Double) data[12]);
-            dto.setVariacionVentas((Double) data[13]);
+            dto.setVentaActual((Double) data[3]);
+            dto.setUtilidadActual((Double) data[4]);
+            dto.setMargenActual((Double) data[5]);
+            dto.setVentaAnterior((Double) data[6]);
+            dto.setUtilidadAnterior((Double) data[7]);
+            dto.setMargenAnterior((Double) data[8]);
+            dto.setDiferenciaVentas((Double) data[9]);
+            dto.setDiferenciaUtilidad((Double) data[10]);
+            if (data.length > 11) {
+                dto.setVariacionVentas((Double) data[11]);
+            }
             return dto;
         }).toList();
 

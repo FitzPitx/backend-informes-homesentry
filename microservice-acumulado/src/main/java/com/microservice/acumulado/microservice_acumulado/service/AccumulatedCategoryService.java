@@ -61,8 +61,8 @@ public class AccumulatedCategoryService {
     }
 
     // Method to obtain the summary by branch
-    public List<Object[]> obtainSummaryByBranch(Integer branchId, Integer year) {
-        return accumulatedCategoryRepository.obtainSummaryByBranch(branchId, year);
+    public List<Object[]> obtainSummaryByBranch(Integer year, Integer branchId) {
+        return accumulatedCategoryRepository.obtainSummaryByBranch(year, branchId);
     }
 
 }

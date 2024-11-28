@@ -83,7 +83,7 @@ public class AccumulatedCategoryRepositoryImpl implements AccumulatedCategoryRep
                 .append("    ventas_actuales va ")
                 .append("LEFT JOIN ventas_anteriores v_ant ON va.codigo = v_ant.codigo AND va.mes = v_ant.mes ")
                 .append("INNER JOIN meses m ON va.mes = m.Numero ")
-                .append("ORDER BY va.codigo, va.mes;");
+                .append("ORDER BY va.mes, va.codigo;");
 
         Query query = entityManager.createNativeQuery(sql.toString());
 

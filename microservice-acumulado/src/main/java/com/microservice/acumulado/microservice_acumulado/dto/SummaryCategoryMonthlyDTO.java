@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Map;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -12,14 +14,5 @@ import lombok.NoArgsConstructor;
 public class SummaryCategoryMonthlyDTO {
     private Integer codigoCategoria;
     private String nombreCategoria;
-    private String mes;
-    private Double ventaActual;
-    private Double utilidadActual;
-    private Double margenActual;
-    private Double ventaAnterior;
-    private Double utilidadAnterior;
-    private Double margenAnterior;
-    private Double diferenciaVentas;
-    private Double diferenciaUtilidad;
-    private Double variacionVentas;
+    private Map<String, MonthlyData> meses;
 }

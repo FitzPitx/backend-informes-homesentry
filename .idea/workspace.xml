@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Adición de la columna costoActual">
+    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Edited obtainSummaryByBranch Method with the correct values">
+      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/MonthlyData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryCategoryMonthlyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryCategoryMonthlyDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryCustom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AccumulatedCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AccumulatedCategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +327,8 @@
       <workItem from="1732542558727" duration="3484000" />
       <workItem from="1732554894355" duration="3415000" />
       <workItem from="1732628427037" duration="5404000" />
-      <workItem from="1732719669615" duration="5471000" />
+      <workItem from="1732719669615" duration="6217000" />
+      <workItem from="1732801107207" duration="7529000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -402,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732657241755</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Edited obtainSummaryByBranch Method with the correct values">
+      <option name="closed" value="true" />
+      <created>1732743171162</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732743171162</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +425,8 @@
     <MESSAGE value="Ajustes para consulta del datatable de resumenPorCategoriaConMes" />
     <MESSAGE value="Ajustes de consulta general de categorias mensual" />
     <MESSAGE value="Adición de la columna costoActual" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adición de la columna costoActual" />
+    <MESSAGE value="Edited obtainSummaryByBranch Method with the correct values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited obtainSummaryByBranch Method with the correct values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

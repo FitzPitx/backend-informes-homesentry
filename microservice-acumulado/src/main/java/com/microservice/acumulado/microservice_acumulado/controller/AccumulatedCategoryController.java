@@ -1,5 +1,6 @@
 package com.microservice.acumulado.microservice_acumulado.controller;
 
+import com.microservice.acumulado.microservice_acumulado.dto.MonthlyData;
 import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryDTO;
 import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryMonthDTO;
 import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryMonthlyDTO;
@@ -7,9 +8,7 @@ import com.microservice.acumulado.microservice_acumulado.service.AccumulatedCate
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -55,33 +54,54 @@ public class AccumulatedCategoryController {
     }
 
     @GetMapping("/resumen-categorias-mensual")
-    public List<SummaryCategoryMonthlyDTO> obtainSummaryByBranch(
+    public List<Map<String, Object>> obtainSummaryByBranch(
             @RequestParam Integer year,
             @RequestParam(required = false) Integer sucursal) {
         // Llama al servicio para obtener los datos (ya filtrados por sucursal y año)
         List<Object[]> allData = accumulatedCategoryService.obtainSummaryByBranch(year, sucursal);
 
-        // Mapeamos los datos a nuestro DTO personalizado para una respuesta mas legible
-        List<SummaryCategoryMonthlyDTO> transformedData = allData.stream().map(data -> {
-            SummaryCategoryMonthlyDTO dto = new SummaryCategoryMonthlyDTO();
-            dto.setCodigoCategoria((Integer) data[0]);
-            dto.setNombreCategoria((String) data[1]);
-            dto.setMes((String) data[2]);
-            dto.setVentaActual((Double) data[3]);
-            dto.setUtilidadActual((Double) data[4]);
-            dto.setMargenActual((Double) data[5]);
-            dto.setVentaAnterior((Double) data[6]);
-            dto.setUtilidadAnterior((Double) data[7]);
-            dto.setMargenAnterior((Double) data[8]);
-            dto.setDiferenciaVentas((Double) data[9]);
-            dto.setDiferenciaUtilidad((Double) data[10]);
+        // Lista para almacenar la respuesta final
+        List<Map<String, Object>> response = new ArrayList<>();
+
+        // Mapa temporal para agrupar categorías
+        Map<Integer, LinkedHashMap<String, Object>> categoryMap = new LinkedHashMap<>();
+
+        for (Object[] data : allData) {
+            Integer codigoCategoria = (Integer) data[0];
+            String nombreCategoria = (String) data[1];
+            String mes = data[2].toString().toLowerCase(); // Usar minúsculas para las claves de los meses
+
+            // Obtener o crear un mapa para la categoría
+            LinkedHashMap<String, Object> categoryData = categoryMap.getOrDefault(codigoCategoria, new LinkedHashMap<>());
+            categoryData.putIfAbsent("codigo_categoria", codigoCategoria);
+            categoryData.putIfAbsent("nombre_categoria", nombreCategoria);
+
+            // Obtener o crear un mapa para el mes
+            LinkedHashMap<String, Object> monthData = (LinkedHashMap<String, Object>) categoryData.getOrDefault(mes, new LinkedHashMap<>());
+
+            // Agregar datos al mapa del mes
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-ventaActual", (Double) data[3]);
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-utilidadActual", (Double) data[4]);
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-margenActual", (Double) data[5]);
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-ventaAnterior", (Double) data[6]);
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-utilidadAnterior", (Double) data[7]);
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-margenAnterior", (Double) data[8]);
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-diferenciaVentas", (Double) data[9]);
+            monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-diferenciaUtilidad", (Double) data[10]);
             if (data.length > 11) {
-                dto.setVariacionVentas((Double) data[11]);
+                monthData.put(mes.substring(0, 1).toUpperCase() + mes.substring(1) + "-variacionVentas", (Double) data[11]);
             }
-            return dto;
-        }).toList();
 
-        return transformedData;
+            // Guardar el mapa del mes en la categoría
+            categoryData.put(mes, monthData);
+
+            // Actualizar el mapa de categorías
+            categoryMap.put(codigoCategoria, categoryData);
+        }
+
+        // Convertir el mapa agrupado en una lista
+        response.addAll(categoryMap.values());
+
+        return response;
     }
-
 }

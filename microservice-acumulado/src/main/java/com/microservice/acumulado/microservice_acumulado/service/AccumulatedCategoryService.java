@@ -2,6 +2,8 @@ package com.microservice.acumulado.microservice_acumulado.service;
 
 import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryDTO;
 import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryMonthDTO;
+import com.microservice.acumulado.microservice_acumulado.dto.SummaryTotalCategory;
+import com.microservice.acumulado.microservice_acumulado.dto.SummaryTotalMonthly;
 import com.microservice.acumulado.microservice_acumulado.repository.AccumulatedCategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -65,4 +67,33 @@ public class AccumulatedCategoryService {
         return accumulatedCategoryRepository.obtainSummaryByBranch(year, branchId);
     }
 
-}
+    // Method to obtain the total summary graph
+    public List<SummaryTotalMonthly> getTotalSummaryGraph(Integer year) {
+            List<Object[]> results = accumulatedCategoryRepository.getTotalSummaryGraph(year);
+            List<SummaryTotalMonthly> resumenList = new ArrayList<>();
+            for (Object[] result : results) {
+                SummaryTotalMonthly dto = new SummaryTotalMonthly();
+                dto.setMonth((String) result[0]);
+                dto.setTotalSaleCurrentYear(((Number) result[1]).doubleValue());
+                dto.setTotalSaleLastYear(((Number) result[2]).doubleValue());
+                resumenList.add(dto);
+            }
+            return resumenList;
+        }
+
+        // Method to obtain the total summary graph by category
+        public List<SummaryTotalCategory> getTotalSummaryGraphByCategory (Integer year){
+            List<Object[]> results = accumulatedCategoryRepository.getTotalSummaryGraphByCategory(year);
+            List<SummaryTotalCategory> resumenList = new ArrayList<>();
+            for (Object[] result : results) {
+                SummaryTotalCategory dto = new SummaryTotalCategory();
+                dto.setCodigoCategoria((Integer) result[0]);
+                dto.setNombreCategoria((String) result[1]);
+                dto.setTotalVentasActual(((Double) result[2]));
+                dto.setTotalVentasAnterior(((Double) result[3]));
+                resumenList.add(dto);
+            }
+            return resumenList;
+        }
+
+    }

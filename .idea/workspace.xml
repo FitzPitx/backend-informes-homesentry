@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Edited obtainSummaryByBranch Method with the correct values">
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/MonthlyData.java" afterDir="false" />
+    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="Edited obtainSummaryByBranch with linkedHashMap response">
+      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryTotalCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryTotalMonthly.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryCategoryMonthlyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryCategoryMonthlyDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryCustom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AccumulatedCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AccumulatedCategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +330,9 @@
       <workItem from="1732554894355" duration="3415000" />
       <workItem from="1732628427037" duration="5404000" />
       <workItem from="1732719669615" duration="6217000" />
-      <workItem from="1732801107207" duration="7529000" />
+      <workItem from="1732801107207" duration="7651000" />
+      <workItem from="1732891618271" duration="1951000" />
+      <workItem from="1733405067902" duration="13412000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -410,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732743171162</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Edited obtainSummaryByBranch with linkedHashMap response">
+      <option name="closed" value="true" />
+      <created>1732830551152</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732830551152</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +438,8 @@
     <MESSAGE value="Ajustes de consulta general de categorias mensual" />
     <MESSAGE value="Adición de la columna costoActual" />
     <MESSAGE value="Edited obtainSummaryByBranch Method with the correct values" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited obtainSummaryByBranch Method with the correct values" />
+    <MESSAGE value="Edited obtainSummaryByBranch with linkedHashMap response" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited obtainSummaryByBranch with linkedHashMap response" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

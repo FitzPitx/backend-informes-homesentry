@@ -101,7 +101,18 @@ public class AccumulatedCategoryController {
 
         // Convertir el mapa agrupado en una lista
         response.addAll(categoryMap.values());
-
         return response;
     }
+
+    @GetMapping("/resumen-total-mensual-grafica")
+    public List<?> getTotalSummayGraph(@RequestParam Integer year){
+        return accumulatedCategoryService.getTotalSummaryGraph(year);
+    }
+
+    @GetMapping("/resumen-total-mensual-grafica-categoria")
+    public List<?> getTotalSummaryGraphByCategory(@RequestParam Integer year){
+        return accumulatedCategoryService.getTotalSummaryGraphByCategory(year);
+    }
+
+
 }

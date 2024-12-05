@@ -14,7 +14,7 @@ public class AccumulatedCategoryRepositoryImpl implements AccumulatedCategoryRep
     private EntityManager entityManager;
 
     @Override
-    public List<Object[]> obtainSummaryByBranch(Integer currentYear, Integer branchId ) {
+    public List obtainSummaryByBranch(Integer currentYear, Integer branchId ) {
 
         int previousYear = currentYear - 1;
 
@@ -93,4 +93,123 @@ public class AccumulatedCategoryRepositoryImpl implements AccumulatedCategoryRep
 
         return query.getResultList();
     }
+
+    @Override
+    public List getTotalSummaryGraph(Integer year) {
+
+        // Calcular los años actual y anterior
+        String currentYearTable = "acum_cat_" + String.valueOf(year).substring(2);
+        String previousYearTable = "acum_cat_" + String.valueOf(year - 1).substring(2);
+
+        String sql = "WITH ventas_actuales AS (" +
+                "    SELECT " +
+                "        m.Numero AS numeroMes, " +
+                "        m.Nombre AS mes, " +
+                "        SUM(CASE " +
+                "            WHEN a23.operacion_actividad > 50 THEN a23.valor - a23.valor_iva " +
+                "            ELSE 0 END) AS totalVentasAñoActual " +
+                "    FROM " +
+                "        " + currentYearTable + " a23 " + // Tabla dinámica
+                "    JOIN meses m ON a23.fecha_mes = m.Numero " +
+                "    JOIN sucursales s ON a23.sucursal = s.CODSUC_SUC " +
+                "    WHERE " +
+                "        s.CODACT_SUC = 1 " +
+                "        AND s.TIPSUC_SUC = 1 " +
+                "        AND a23.operacion_actividad > 50 " +
+                "        AND a23.operacion_actividad NOT IN (52, 53, 63, 64, 11, 12, 25) " +
+                "    GROUP BY " +
+                "        m.Numero, m.Nombre " +
+                "), " +
+                "ventas_anteriores AS (" +
+                "    SELECT " +
+                "        m.Numero AS numeroMes, " +
+                "        m.Nombre AS mes, " +
+                "        SUM(CASE " +
+                "            WHEN a22.operacion_actividad > 50 THEN a22.valor - a22.valor_iva " +
+                "            ELSE 0 END) AS totalVentasAñoAnterior " +
+                "    FROM " +
+                "        " + previousYearTable + " a22 " + // Tabla dinámica
+                "    JOIN meses m ON a22.fecha_mes = m.Numero " +
+                "    JOIN sucursales s ON a22.sucursal = s.CODSUC_SUC " +
+                "    WHERE " +
+                "        s.CODACT_SUC = 1 " +
+                "        AND s.TIPSUC_SUC = 1 " +
+                "        AND a22.operacion_actividad > 50 " +
+                "        AND a22.operacion_actividad NOT IN (52, 53, 63, 64, 11, 12, 25) " +
+                "    GROUP BY " +
+                "        m.Numero, m.Nombre " +
+                ") " +
+                "SELECT " +
+                "    va.mes AS Mes, " +
+                "    ISNULL(va.totalVentasAñoActual, 0) AS TotalVentasAñoActual, " +
+                "    ISNULL(v_ant.totalVentasAñoAnterior, 0) AS TotalVentasAñoAnterior " +
+                "FROM " +
+                "    ventas_actuales va " +
+                "LEFT JOIN ventas_anteriores v_ant ON va.numeroMes = v_ant.numeroMes " +
+                "ORDER BY " +
+                "    va.numeroMes ASC;";
+
+        Query query = entityManager.createNativeQuery(sql);
+        return query.getResultList();
+    }
+
+    @Override
+    public List getTotalSummaryGraphByCategory(Integer year) {
+        // Calcular los nombres de las tablas para el año actual y anterior
+        String currentYearTable = "acum_cat_" + String.valueOf(year).substring(2);
+        String previousYearTable = "acum_cat_" + String.valueOf(year - 1).substring(2);
+
+        String sql = "WITH ventas_actuales AS (" +
+                "    SELECT " +
+                "        c.COD_CEG AS codigoCategoria, " +
+                "        c.NOMCAT_CEG AS nombreCategoria, " +
+                "        SUM(CASE " +
+                "            WHEN a23.operacion_actividad > 50 THEN a23.valor - a23.valor_iva " +
+                "            ELSE 0 END) AS totalVentasAñoActual " +
+                "    FROM " +
+                "        " + currentYearTable + " a23 " + // Tabla dinámica
+                "    JOIN categorias c ON a23.codigo = c.COD_CEG " +
+                "    JOIN sucursales s ON a23.sucursal = s.CODSUC_SUC " +
+                "    WHERE " +
+                "        s.CODACT_SUC = 1 " +
+                "        AND s.TIPSUC_SUC = 1 " +
+                "        AND a23.operacion_actividad > 50 " +
+                "        AND a23.operacion_actividad NOT IN (52, 53, 63, 64, 11, 12, 25) " +
+                "    GROUP BY " +
+                "        c.COD_CEG, c.NOMCAT_CEG " +
+                "), " +
+                "ventas_anteriores AS (" +
+                "    SELECT " +
+                "        c.COD_CEG AS codigoCategoria, " +
+                "        c.NOMCAT_CEG AS nombreCategoria, " +
+                "        SUM(CASE " +
+                "            WHEN a22.operacion_actividad > 50 THEN a22.valor - a22.valor_iva " +
+                "            ELSE 0 END) AS totalVentasAñoAnterior " +
+                "    FROM " +
+                "        " + previousYearTable + " a22 " + // Tabla dinámica
+                "    JOIN categorias c ON a22.codigo = c.COD_CEG " +
+                "    JOIN sucursales s ON a22.sucursal = s.CODSUC_SUC " +
+                "    WHERE " +
+                "        s.CODACT_SUC = 1 " +
+                "        AND s.TIPSUC_SUC = 1 " +
+                "        AND a22.operacion_actividad > 50 " +
+                "        AND a22.operacion_actividad NOT IN (52, 53, 63, 64, 11, 12, 25) " +
+                "    GROUP BY " +
+                "        c.COD_CEG, c.NOMCAT_CEG " +
+                ") " +
+                "SELECT " +
+                "    va.codigoCategoria AS CodigoCategoria, " +
+                "    va.nombreCategoria AS NombreCategoria, " +
+                "    ISNULL(va.totalVentasAñoActual, 0) AS TotalVentasAñoActual, " +
+                "    ISNULL(v_ant.totalVentasAñoAnterior, 0) AS TotalVentasAñoAnterior " +
+                "FROM " +
+                "    ventas_actuales va " +
+                "LEFT JOIN ventas_anteriores v_ant ON va.codigoCategoria = v_ant.codigoCategoria " +
+                "ORDER BY " +
+                "    va.codigoCategoria;";
+
+        Query query = entityManager.createNativeQuery(sql);
+        return query.getResultList();
+    }
+
 }

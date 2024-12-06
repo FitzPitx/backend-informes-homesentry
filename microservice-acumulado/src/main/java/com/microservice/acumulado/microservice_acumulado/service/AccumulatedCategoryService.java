@@ -1,9 +1,6 @@
 package com.microservice.acumulado.microservice_acumulado.service;
 
-import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryDTO;
-import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryMonthDTO;
-import com.microservice.acumulado.microservice_acumulado.dto.SummaryTotalCategory;
-import com.microservice.acumulado.microservice_acumulado.dto.SummaryTotalMonthly;
+import com.microservice.acumulado.microservice_acumulado.dto.*;
 import com.microservice.acumulado.microservice_acumulado.repository.AccumulatedCategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -68,8 +65,8 @@ public class AccumulatedCategoryService {
     }
 
     // Method to obtain the total summary graph
-    public List<SummaryTotalMonthly> getTotalSummaryGraph(Integer year) {
-            List<Object[]> results = accumulatedCategoryRepository.getTotalSummaryGraph(year);
+    public List<SummaryTotalMonthly> getTotalSummaryGraph(Integer year, Integer sucursal) {
+            List<Object[]> results = accumulatedCategoryRepository.getTotalSummaryGraph(year, sucursal);
             List<SummaryTotalMonthly> resumenList = new ArrayList<>();
             for (Object[] result : results) {
                 SummaryTotalMonthly dto = new SummaryTotalMonthly();
@@ -82,8 +79,8 @@ public class AccumulatedCategoryService {
         }
 
         // Method to obtain the total summary graph by category
-        public List<SummaryTotalCategory> getTotalSummaryGraphByCategory (Integer year){
-            List<Object[]> results = accumulatedCategoryRepository.getTotalSummaryGraphByCategory(year);
+        public List<SummaryTotalCategory> getTotalSummaryGraphByCategory (Integer year, Integer sucursal){
+            List<Object[]> results = accumulatedCategoryRepository.getTotalSummaryGraphByCategory(year, sucursal);
             List<SummaryTotalCategory> resumenList = new ArrayList<>();
             for (Object[] result : results) {
                 SummaryTotalCategory dto = new SummaryTotalCategory();
@@ -91,6 +88,20 @@ public class AccumulatedCategoryService {
                 dto.setNombreCategoria((String) result[1]);
                 dto.setTotalVentasActual(((Double) result[2]));
                 dto.setTotalVentasAnterior(((Double) result[3]));
+                resumenList.add(dto);
+            }
+            return resumenList;
+        }
+
+        // Method to obtain the total profit comparison by month
+        public List<SummaryTotalProfitMonthly> getTotalProfitComparisonByMonth (Integer year, Integer sucursal){
+            List<Object[]> results = accumulatedCategoryRepository.getTotalProfitComparisonByMonth(year, sucursal);
+            List<SummaryTotalProfitMonthly> resumenList = new ArrayList<>();
+            for (Object[] result : results) {
+                SummaryTotalProfitMonthly dto = new SummaryTotalProfitMonthly();
+                dto.setMonth((String) result[0]);
+                dto.setTotalProfitCurrentYear(((Double) result[1]));
+                dto.setTotalProfitLastYear(((Double) result[2]));
                 resumenList.add(dto);
             }
             return resumenList;

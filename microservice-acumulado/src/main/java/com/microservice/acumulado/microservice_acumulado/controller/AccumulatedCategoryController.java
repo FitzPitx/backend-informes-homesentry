@@ -1,9 +1,6 @@
 package com.microservice.acumulado.microservice_acumulado.controller;
 
-import com.microservice.acumulado.microservice_acumulado.dto.MonthlyData;
-import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryDTO;
-import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryMonthDTO;
-import com.microservice.acumulado.microservice_acumulado.dto.SummaryCategoryMonthlyDTO;
+import com.microservice.acumulado.microservice_acumulado.dto.*;
 import com.microservice.acumulado.microservice_acumulado.service.AccumulatedCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -105,13 +102,27 @@ public class AccumulatedCategoryController {
     }
 
     @GetMapping("/resumen-total-mensual-grafica")
-    public List<?> getTotalSummayGraph(@RequestParam Integer year){
-        return accumulatedCategoryService.getTotalSummaryGraph(year);
+    public List<SummaryTotalMonthly> getTotalSummayGraph(
+            @RequestParam Integer year,
+            @RequestParam(required = false) Integer sucursal)
+    {
+        return accumulatedCategoryService.getTotalSummaryGraph(year, sucursal);
     }
 
     @GetMapping("/resumen-total-mensual-grafica-categoria")
-    public List<?> getTotalSummaryGraphByCategory(@RequestParam Integer year){
-        return accumulatedCategoryService.getTotalSummaryGraphByCategory(year);
+    public List<SummaryTotalCategory> getTotalSummaryGraphByCategory(
+            @RequestParam Integer year,
+            @RequestParam(required = false) Integer sucursal)
+    {
+        return accumulatedCategoryService.getTotalSummaryGraphByCategory(year, sucursal);
+    }
+
+    @GetMapping("/comparacion-utilidad-mensual")
+    public List<SummaryTotalProfitMonthly> getTotalProfitComparisonByMonth(
+            @RequestParam Integer year,
+            @RequestParam(required = false) Integer sucursal)
+    {
+        return accumulatedCategoryService.getTotalProfitComparisonByMonth(year, sucursal);
     }
 
 

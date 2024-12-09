@@ -7,8 +7,8 @@ spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     url: jdbc:sqlserver://172.16.0.20:1433;databaseName=acumulado_categorias;encrypt=true;trustServerCertificate=true;
-    username: homesentry
-    password: Sentry2024$
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update

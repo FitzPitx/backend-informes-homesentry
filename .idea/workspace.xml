@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="added new dynamically requests for charts">
-      <change afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/dto/SummaryTotalProfitMonthly.java" afterDir="false" />
+    <list default="true" id="638e1830-548b-49f7-bde6-dd5c7c0c8575" name="Changes" comment="added SummaryTotalProfitMonthly.java">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e58b16d-bbaa-4826-bc12-482de7d1d79d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7e58b16d-bbaa-4826-bc12-482de7d1d79d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/controller/AccumulatedCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/repository/AccumulatedCategoryRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AccumulatedCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/java/com/microservice/acumulado/microservice_acumulado/service/AccumulatedCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-acumulado/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-acumulado/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-acumulado.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-acumulado.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +138,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MicroserviceEurekaApplication">
+  <component name="RunManager" selected="Spring Boot.MicroserviceAcumuladoApplication">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -147,7 +146,13 @@
       <method v="2" />
     </configuration>
     <configuration name="MicroserviceAcumuladoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
       <module name="microservice-acumulado" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.acumulado.microservice_acumulado.MicroserviceAcumuladoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -255,13 +260,13 @@
     <list>
       <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="Spring Boot.MicroserviceEurekaApplication" />
       <item itemvalue="Spring Boot.MicroserviceAcumuladoApplication" />
       <item itemvalue="Spring Boot.MicroserviceGatewayApplication" />
       <item itemvalue="Spring Boot.MicroserviceReferencesApplication" />
       <item itemvalue="Spring Boot.MicroserviceBranchesApplication" />
       <item itemvalue="Spring Boot.MicroserviceCategoriesApplication" />
       <item itemvalue="Spring Boot.MicroserviceConfigApplication" />
-      <item itemvalue="Spring Boot.MicroserviceEurekaApplication" />
       <item itemvalue="Spring Boot.MicroserviceInventoriesApplication" />
       <item itemvalue="Spring Boot.MicroserviceLinesApplication" />
       <item itemvalue="Spring Boot.MicroserviceSubcategoriesApplication" />
@@ -331,7 +336,8 @@
       <workItem from="1732719669615" duration="6217000" />
       <workItem from="1732801107207" duration="7651000" />
       <workItem from="1732891618271" duration="1951000" />
-      <workItem from="1733405067902" duration="19556000" />
+      <workItem from="1733405067902" duration="19718000" />
+      <workItem from="1733750127704" duration="3360000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -429,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733436015167</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added SummaryTotalProfitMonthly.java">
+      <option name="closed" value="true" />
+      <created>1733503504654</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733503504654</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +472,8 @@
     <MESSAGE value="Edited obtainSummaryByBranch Method with the correct values" />
     <MESSAGE value="Edited obtainSummaryByBranch with linkedHashMap response" />
     <MESSAGE value="added new dynamically requests for charts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new dynamically requests for charts" />
+    <MESSAGE value="added SummaryTotalProfitMonthly.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="added SummaryTotalProfitMonthly.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
